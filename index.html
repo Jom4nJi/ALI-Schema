@@ -15,6 +15,7 @@
     var week;
     var klass;
     var school;
+    var schools;
 
     Date.prototype.getWeek = function() {
         var onejan = new Date(this.getFullYear(), 0, 1);
@@ -48,8 +49,6 @@
 
         let settings = new ElectronSettings();
 
-        console.log(settings.getConfigFilePath());
-
         if (week == null) {
             var d = new Date();
             week = d.realGetWeek();
@@ -60,6 +59,10 @@
         load(3);
         load(4);
         load(5);
+
+        getJSON("http://beontime.se/app/schools.json", function(err, data) {
+          schools = data;
+        });
     }
 
     function load(temp) {
@@ -69,8 +72,6 @@
                 if (err != null) {
                     alert("Something went wrong: " + err);
                 } else {
-
-                    console.log("loading " + temp);
 
                     table = document.getElementById(temp);
                     table.innerHTML = "";
@@ -103,6 +104,33 @@
                     }
                 }
             });
+    }
+
+    function selectSchool() {
+
+        var select = document.getElementById('schoolList');
+
+        for (var i = 0; i < schools.length; i++) {
+
+          let item = document.createElement('option');
+          item.value = schools[i].id;
+          item.innerHTML = schools[i].namn + " - " + schools[i].stad;
+
+          select.appendChild(item);
+        }
+
+        var dialog = document.getElementById('school');
+        var showDialogButton = document.querySelector('#show-school');
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        showDialogButton.addEventListener('click', function() {
+            dialog.showModal();
+        });
+        dialog.querySelector('.done').addEventListener('click', function() {
+            dialog.close();
+            start();
+        });
     }
 
     function selectWeek() {
@@ -203,28 +231,34 @@
                 <dialog class="mdl-dialog" id="week">
                     <h4 class="mdl-dialog__title">Välj Vecka</h4>
                     <div class="mdl-dialog__content">
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield txt">
-                                <input class="mdl-textfield__input txt week" type="number" min="1" max="52" id="sample4">
-                                <span class="mdl-textfield__error">Endast 1-52 är tillåtet!</span>
-                            </div>
-                        </form>
+                        <div class="mdl-textfield mdl-js-textfield txt">
+                            <input class="mdl-textfield__input txt week" type="number" min="1" max="52" id="sample4">
+                            <span class="mdl-textfield__error">Endast 1-52 är tillåtet!</span>
+                        </div>
                     </div>
                     <div class="mdl-dialog__actions">
                         <button type="button" class="mdl-button done">Välj</button>
                     </div>
                 </dialog>
-                <a class="mdl-navigation__link" href="javascript:selectSchool();">Skola</a>
+                <a class="mdl-navigation__link" href="javascript:selectSchool();" id="show-school">Skola</a>
+                <dialog class="mdl-dialog" id="school">
+                    <h4 class="mdl-dialog__title">Välj Skola</h4>
+                    <div class="mdl-dialog__content">
+                        <select id="schoolList">
+                        </select>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button done">Välj</button>
+                    </div>
+                </dialog>
                 <a class="mdl-navigation__link" href="javascript:selectID();" id="show-klass">ID</a>
                 <dialog class="mdl-dialog" id="klass">
                     <h4 class="mdl-dialog__title">Välj ID</h4>
                     <div class="mdl-dialog__content">
                         <p>ID kan vara i form av personnummer, klass, eller annat.</p>
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield txt">
-                                <input class="mdl-textfield__input txt week" type="text" id="sample4">
-                            </div>
-                        </form>
+                        <div class="mdl-textfield mdl-js-textfield txt">
+                            <input class="mdl-textfield__input txt week" type="text" id="sample4">
+                        </div>
                     </div>
                     <div class="mdl-dialog__actions">
                         <button type="button" class="mdl-button done">Välj</button>
