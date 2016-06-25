@@ -130,9 +130,7 @@
         if (!dialog.showModal) {
             dialogPolyfill.registerDialog(dialog);
         }
-        showDialogButton.addEventListener('click', function() {
-            dialog.showModal();
-        });
+        dialog.showModal();
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
             school = select.options[select.selectedIndex].value;
@@ -148,10 +146,8 @@
         if (!dialog.showModal) {
             dialogPolyfill.registerDialog(dialog);
         }
-        showDialogButton.addEventListener('click', function() {
-            dialog.querySelector('.week').value = week;
-            dialog.showModal();
-        });
+        dialog.querySelector('.week').value = week;
+        dialog.showModal();
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
             week = dialog.querySelector('.week').value;
@@ -167,10 +163,8 @@
         if (!dialog.showModal) {
             dialogPolyfill.registerDialog(dialog);
         }
-        showDialogButton.addEventListener('click', function() {
-            dialog.querySelector('.week').value = klass;
-            dialog.showModal();
-        });
+        dialog.querySelector('.week').value = klass;
+        dialog.showModal();
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
             klass = dialog.querySelector('.week').value;
