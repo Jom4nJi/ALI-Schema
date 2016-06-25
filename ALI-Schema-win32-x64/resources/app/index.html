@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ALI-Schema</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.cyan-indigo.min.css" />
+    <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+</head>
+
+<script>
+    var week;
+    var klass;
+    var school;
+    var schools;
+
+    Date.prototype.getWeek = function() {
+        var onejan = new Date(this.getFullYear(), 0, 1);
+        return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+    }
+    Date.prototype.realGetWeek = function() {
+        var dDate = this.getDate();
+        var d = new Date();
+        d.setDate(dDate - 2);
+        return d.getWeek() - 1;
+    }
+
+    var getJSON = function(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", url, true);
+        xhr.responseType = "json";
+        xhr.onload = function() {
+            var status = xhr.status;
+            if (status == 200) {
+                callback(null, xhr.response);
+            } else {
+                callback(status);
+            }
+        };
+        xhr.send();
+    };
+
+    function start() {
+
+        const ElectronSettings = require('electron-settings');
+        let settings = new ElectronSettings();
+
+        if (week == null) {
+            var d = new Date();
+            week = d.realGetWeek();
+        }
+
+        klass = settings.get('klass');
+        school = settings.get('school');
+
+        load(1);
+        load(2);
+        load(3);
+        load(4);
+        load(5);
+
+        getJSON("http://beontime.se/app/schools.json", function(err, data) {
+            schools = data;
+        });
+    }
+
+    function load(temp) {
+
+        getJSON("http://jobb.matstoms.se/ali/api/getjson.php?week=" + week + "&scid=" + school + "&clid=" + klass + "&getweek=0&day=" + temp,
+            function(err, data) {
+                if (err != null) {
+                    alert("Something went wrong: " + err);
+                } else {
+
+                    table = document.getElementById(temp);
+                    table.innerHTML = "";
+
+                    for (var a = 0; a < data.lessons.length; a++) {
+
+                        var row = document.createElement('li');
+                        row.className = "mdl-list__item mdl-list__item--two-line mdl-menu__item--full-bleed-divider";
+
+                        var primary = document.createElement('span');
+                        primary.className = "mdl-list__item-primary-content";
+                        row.appendChild(primary);
+
+                        var span = document.createElement('span');
+
+                        if (data.lessons[a].subject != null) {
+                            span.innerHTML = data.lessons[a].subject;
+                        } else {
+                            span.innerHTML = data.lessons[a].info;
+                        }
+
+                        primary.appendChild(span);
+
+                        var subTitle = document.createElement('span');
+                        subTitle.className = "mdl-list__item-sub-title";
+                        subTitle.innerHTML = data.lessons[a].start + ' - ' + data.lessons[a].end;
+                        primary.appendChild(subTitle);
+
+                        table.appendChild(row);
+                    }
+                }
+            });
+    }
+
+    function selectSchool() {
+
+        const ElectronSettings = require('electron-settings');
+        let settings = new ElectronSettings();
+
+        var select = document.getElementById('schoolList');
+
+        for (var i = 0; i < schools.length; i++) {
+
+            let item = document.createElement('option');
+            item.value = schools[i].id;
+            item.innerHTML = schools[i].namn + " - " + schools[i].stad;
+
+            if (item.value == settings.get('school')) {
+                item.selected = "selected";
+            }
+
+            select.appendChild(item);
+        }
+
+        var dialog = document.getElementById('school');
+        var showDialogButton = document.querySelector('#show-school');
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        dialog.showModal();
+        dialog.querySelector('.done').addEventListener('click', function() {
+            dialog.close();
+            school = select.options[select.selectedIndex].value;
+            settings.set('school', school);
+            start();
+        });
+    }
+
+    function selectWeek() {
+
+        var dialog = document.getElementById('week');
+        var showDialogButton = document.querySelector('#show-dialog');
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        dialog.querySelector('.week').value = week;
+        dialog.showModal();
+        dialog.querySelector('.done').addEventListener('click', function() {
+            dialog.close();
+            week = dialog.querySelector('.week').value;
+            start();
+        });
+
+    }
+
+    function selectID() {
+
+        const ElectronSettings = require('electron-settings');
+        let settings = new ElectronSettings();
+
+        var dialog = document.getElementById('klass');
+        var showDialogButton = document.querySelector('#show-klass');
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        if (klass) {
+            dialog.querySelector('.week').value = klass;
+        }
+        dialog.showModal();
+        dialog.querySelector('.done').addEventListener('click', function() {
+            dialog.close();
+            klass = dialog.querySelector('.week').value;
+            settings.set('klass', klass);
+            start();
+        });
+
+    }
+</script>
+
+<style>
+    .mdl-layout__drawer-button {
+        -webkit-app-region: no-drag;
+        color: white;
+    }
+
+    .header .mdl-layout__header {
+        color: white;
+        background-color: #009688;
+    }
+
+    .tab .mdl-layout__tab-bar {
+        color: white;
+        background-color: #009688;
+    }
+
+    .txt .mdl-textfield .mdl-textfield__input {
+        color: #009688;
+        background-color: color: #009688;
+    }
+
+    .mdl-layout__tab {
+        color: white;
+        background-color: #009688;
+    }
+
+    .a {
+        -webkit-app-region: no-drag;
+    }
+
+    .b {
+        -webkit-app-region: drag;
+    }
+</style>
+
+<body style="-webkit-app-region: drag" onload="start();">
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs header a">
+        <header class="mdl-layout__header b">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">ALI-Schema</span>
+                <div class="mdl-layout-spacer b"></div>
+            </div>
+            <div class="mdl-layout__tab-bar a tab">
+                <a href="#fixed-tab-1" class="mdl-layout__tab a">Måndag</a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab a">Tisdag</a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab a">Onsdag</a>
+                <a href="#fixed-tab-4" class="mdl-layout__tab a">Torsdag</a>
+                <a href="#fixed-tab-5" class="mdl-layout__tab a">Fredag</a>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Inställningar</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-menu__item--full-bleed-divider" href="javascript:selectWeek();" id="show-dialog">Vecka...</a>
+                <dialog class="mdl-dialog" id="week">
+                    <h4 class="mdl-dialog__title">Välj Vecka</h4>
+                    <div class="mdl-dialog__content">
+                        <div class="mdl-textfield mdl-js-textfield txt">
+                            <input class="mdl-textfield__input txt week" type="number" min="1" max="52" id="sample4">
+                            <span class="mdl-textfield__error">Endast 1-52 är tillåtet!</span>
+                        </div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button done">Välj</button>
+                    </div>
+                </dialog>
+                <a class="mdl-navigation__link" href="javascript:selectSchool();" id="show-school">Skola</a>
+                <dialog class="mdl-dialog" id="school">
+                    <h4 class="mdl-dialog__title">Välj Skola</h4>
+                    <div class="mdl-dialog__content">
+                        <select id="schoolList" style="width: 100%;">
+                        </select>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button done">Välj</button>
+                    </div>
+                </dialog>
+                <a class="mdl-navigation__link" href="javascript:selectID();" id="show-klass">ID</a>
+                <dialog class="mdl-dialog" id="klass">
+                    <h4 class="mdl-dialog__title">Välj ID</h4>
+                    <div class="mdl-dialog__content">
+                        <p>ID kan vara i form av personnummer, klass, eller annat.</p>
+                        <div class="mdl-textfield mdl-js-textfield txt">
+                            <input class="mdl-textfield__input txt week" type="text" id="sample4">
+                        </div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button done">Välj</button>
+                    </div>
+                </dialog>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="page-content">
+                    <ui class="mdl-list" id="1">
+                    </ui>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">
+                    <ui class="mdl-list" id="2">
+                    </ui>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <div class="page-content">
+                    <ui class="mdl-list" id="3">
+                    </ui>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+                <div class="page-content">
+                    <ui class="mdl-list" id="4">
+                    </ui>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-5">
+                <div class="page-content">
+                    <ui class="mdl-list" id="5">
+                    </ui>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

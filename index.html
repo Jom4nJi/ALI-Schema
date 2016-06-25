@@ -18,10 +18,12 @@
     var schools;
 
     Date.prototype.getWeek = function() {
+
         var onejan = new Date(this.getFullYear(), 0, 1);
         return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
     }
     Date.prototype.realGetWeek = function() {
+
         var dDate = this.getDate();
         var d = new Date();
         d.setDate(dDate - 2);
@@ -29,6 +31,7 @@
     }
 
     var getJSON = function(url, callback) {
+
         var xhr = new XMLHttpRequest();
         xhr.open("get", url, true);
         xhr.responseType = "json";
@@ -184,9 +187,13 @@
 </script>
 
 <style>
+    .mdl-layout-title {
+        padding-top: 18px;
+    }
+
     .mdl-layout__drawer-button {
+        padding-top: 10px;
         -webkit-app-region: no-drag;
-        color: white;
     }
 
     .header .mdl-layout__header {

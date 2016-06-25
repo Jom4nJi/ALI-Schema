@@ -19,10 +19,8 @@ function createWindow() {
         win = new BrowserWindow({
             width: 500,
             height: 600,
-            frame: true,
-            transparent: false,
             resizable: false,
-            titleBarStyle: 'hidden'
+            titleBarStyle: 'hidden',
         });
     } else {
         win = new BrowserWindow({
