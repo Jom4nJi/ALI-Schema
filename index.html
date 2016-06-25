@@ -46,7 +46,6 @@
     function start() {
 
         const ElectronSettings = require('electron-settings');
-
         let settings = new ElectronSettings();
 
         if (week == null) {
@@ -61,13 +60,13 @@
         load(5);
 
         getJSON("http://beontime.se/app/schools.json", function(err, data) {
-          schools = data;
+            schools = data;
         });
     }
 
     function load(temp) {
 
-        getJSON("http://jobb.matstoms.se/ali/api/getjson.php?week=" + week + "&scid=89920&clid=" + klass + "&getweek=0&day=" + temp,
+        getJSON("http://jobb.matstoms.se/ali/api/getjson.php?week=" + week + "&scid=" + school + "&clid=" + klass + "&getweek=0&day=" + temp,
             function(err, data) {
                 if (err != null) {
                     alert("Something went wrong: " + err);
@@ -108,15 +107,22 @@
 
     function selectSchool() {
 
+        const ElectronSettings = require('electron-settings');
+        let settings = new ElectronSettings();
+
         var select = document.getElementById('schoolList');
 
         for (var i = 0; i < schools.length; i++) {
 
-          let item = document.createElement('option');
-          item.value = schools[i].id;
-          item.innerHTML = schools[i].namn + " - " + schools[i].stad;
+            let item = document.createElement('option');
+            item.value = schools[i].id;
+            item.innerHTML = schools[i].namn + " - " + schools[i].stad;
 
-          select.appendChild(item);
+            if (item.value == settings.get('school')) {
+                item.selected = "selected";
+            }
+
+            select.appendChild(item);
         }
 
         var dialog = document.getElementById('school');
@@ -129,6 +135,8 @@
         });
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
+            school = select.options[select.selectedIndex].value;
+            settings.set('school', school);
             start();
         });
     }
