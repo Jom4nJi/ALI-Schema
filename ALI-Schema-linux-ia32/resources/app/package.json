@@ -1,9 +1,0 @@
-{
-  "name": "ALI-Schema",
-  "version": "1.0.0",
-  "main": "main.js",
-  "devDependencies": {
-    "electron-builder": "^5.7.0",
-    "electron-packager": "^7.1.0"
-  }
-}
