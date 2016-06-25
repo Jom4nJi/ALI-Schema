@@ -154,6 +154,14 @@
         }
         dialog.querySelector('.week').value = week;
         dialog.showModal();
+
+        dialog.querySelector('.thisWeek').addEventListener('click', function() {
+            dialog.close();
+            var d = new Date();
+            week = d.realGetWeek();
+            start();
+        });
+
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
             week = dialog.querySelector('.week').value;
@@ -176,6 +184,7 @@
             dialog.querySelector('.week').value = klass;
         }
         dialog.showModal();
+
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
             klass = dialog.querySelector('.week').value;
@@ -190,7 +199,7 @@
     .mdl-layout-title {
         padding-top: 18px;
     }
-    
+
     .mdl-layout__drawer-button {
         padding-top: 10px;
         -webkit-app-region: no-drag;
@@ -256,6 +265,7 @@
                     </div>
                     <div class="mdl-dialog__actions">
                         <button type="button" class="mdl-button done">Välj</button>
+                        <button type="button" class="mdl-button thisWeek">Denna Vecka</button>
                     </div>
                 </dialog>
                 <a class="mdl-navigation__link" href="javascript:selectSchool();" id="show-school">Skola</a>
