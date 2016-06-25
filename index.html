@@ -53,6 +53,9 @@
             week = d.realGetWeek();
         }
 
+        klass = settings.get('klass');
+        school = settings.get('school');
+
         load(1);
         load(2);
         load(3);
@@ -158,16 +161,22 @@
 
     function selectID() {
 
+        const ElectronSettings = require('electron-settings');
+        let settings = new ElectronSettings();
+
         var dialog = document.getElementById('klass');
         var showDialogButton = document.querySelector('#show-klass');
         if (!dialog.showModal) {
             dialogPolyfill.registerDialog(dialog);
         }
-        dialog.querySelector('.week').value = klass;
+        if (klass) {
+            dialog.querySelector('.week').value = klass;
+        }
         dialog.showModal();
         dialog.querySelector('.done').addEventListener('click', function() {
             dialog.close();
             klass = dialog.querySelector('.week').value;
+            settings.set('klass', klass);
             start();
         });
 
