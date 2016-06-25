@@ -1,0 +1,2631 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'electron-settings' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData electron-settings
+8 silly fetchNamedPackageData electron-settings
+9 silly mapToRegistry name electron-settings
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/electron-settings
+13 verbose request uri https://registry.npmjs.org/electron-settings
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 1:25:11 AM
+16 verbose request id 1afc10a451806e23
+17 http request GET https://registry.npmjs.org/electron-settings
+18 http 200 https://registry.npmjs.org/electron-settings
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"5PK85EILHEFMDHX3MIOVLK98N"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'content-encoding': 'gzip',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '2854',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Sun, 12 Jun 2016 23:25:11 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1465773911.684777,VS0,VE176',
+19 verbose headers   vary: 'Accept-Encoding' }
+20 silly get cb [ 200,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"5PK85EILHEFMDHX3MIOVLK98N"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'content-encoding': 'gzip',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '2854',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Sun, 12 Jun 2016 23:25:11 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-ams4132-AMS',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1465773911.684777,VS0,VE176',
+20 silly get     vary: 'Accept-Encoding' } ]
+21 verbose get saving electron-settings to /home/luka/.npm/registry.npmjs.org/electron-settings/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule electron-settings@1.0.4 checking installable status
+35 silly cache add args [ 'electron-settings', null ]
+36 verbose cache add spec electron-settings
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'electron-settings',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'electron-settings',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed electron-settings@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for electron-settings
+40 info addNameTag [ 'electron-settings', 'latest' ]
+41 silly mapToRegistry name electron-settings
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/electron-settings
+45 verbose addNameTag registry:https://registry.npmjs.org/electron-settings not in flight; fetching
+46 verbose get https://registry.npmjs.org/electron-settings not expired, no request
+47 silly addNameTag next cb for electron-settings with tag latest
+48 silly addNamed electron-settings@1.0.4
+49 verbose addNamed "1.0.4" is a plain semver version for electron-settings
+50 silly mapToRegistry name electron-settings
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/electron-settings
+54 verbose addRemoteTarball https://registry.npmjs.org/electron-settings/-/electron-settings-1.0.4.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/electron-settings/-/electron-settings-1.0.4.tgz',
+55 verbose addRemoteTarball   '88a84bd46f6fca6cd952a24881e2ae4dd2d08f60' ]
+56 info retry fetch attempt 1 at 1:25:11 AM
+57 info attempt registry request try #1 at 1:25:11 AM
+58 http fetch GET https://registry.npmjs.org/electron-settings/-/electron-settings-1.0.4.tgz
+59 http fetch 200 https://registry.npmjs.org/electron-settings/-/electron-settings-1.0.4.tgz
+60 silly fetchAndShaCheck shasum 88a84bd46f6fca6cd952a24881e2ae4dd2d08f60
+61 verbose addTmpTarball /tmp/npm-14403-e5a4445f/registry.npmjs.org/electron-settings/-/electron-settings-1.0.4.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for electron-settings@1.0.4
+63 silly cache afterAdd electron-settings@1.0.4
+64 verbose afterAdd /home/luka/.npm/electron-settings/1.0.4/package/package.json not in flight; writing
+65 verbose afterAdd /home/luka/.npm/electron-settings/1.0.4/package/package.json written
+66 silly fetchNamedPackageData debug
+67 silly mapToRegistry name debug
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/debug
+71 silly fetchNamedPackageData deep-diff
+72 silly mapToRegistry name deep-diff
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry uri https://registry.npmjs.org/deep-diff
+76 silly fetchNamedPackageData ensure-array
+77 silly mapToRegistry name ensure-array
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry https://registry.npmjs.org/
+80 silly mapToRegistry uri https://registry.npmjs.org/ensure-array
+81 silly fetchNamedPackageData fs-extra
+82 silly mapToRegistry name fs-extra
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+86 silly fetchNamedPackageData key-mirror
+87 silly mapToRegistry name key-mirror
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry uri https://registry.npmjs.org/key-mirror
+91 silly fetchNamedPackageData lodash
+92 silly mapToRegistry name lodash
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/lodash
+96 silly fetchNamedPackageData minimatch
+97 silly mapToRegistry name minimatch
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+101 verbose request uri https://registry.npmjs.org/deep-diff
+102 verbose request no auth needed
+103 info attempt registry request try #1 at 1:25:12 AM
+104 http request GET https://registry.npmjs.org/deep-diff
+105 verbose request uri https://registry.npmjs.org/ensure-array
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 1:25:12 AM
+108 http request GET https://registry.npmjs.org/ensure-array
+109 verbose request uri https://registry.npmjs.org/key-mirror
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 1:25:12 AM
+112 http request GET https://registry.npmjs.org/key-mirror
+113 verbose request uri https://registry.npmjs.org/debug
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 1:25:12 AM
+116 verbose etag "9K1MWGO25MI6JV4O209795NK5"
+117 http request GET https://registry.npmjs.org/debug
+118 verbose request uri https://registry.npmjs.org/fs-extra
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 1:25:12 AM
+121 verbose etag "6X6AQSLO8QCPZC2UWSRFFF3CN"
+122 http request GET https://registry.npmjs.org/fs-extra
+123 verbose request uri https://registry.npmjs.org/lodash
+124 verbose request no auth needed
+125 info attempt registry request try #1 at 1:25:12 AM
+126 verbose etag "A0AIZBMVR8LML31313L4NW5A9"
+127 http request GET https://registry.npmjs.org/lodash
+128 verbose request uri https://registry.npmjs.org/minimatch
+129 verbose request no auth needed
+130 info attempt registry request try #1 at 1:25:12 AM
+131 verbose etag "78KV3LAIGK70DO4BT3WW2Q5DO"
+132 http request GET https://registry.npmjs.org/minimatch
+133 http 304 https://registry.npmjs.org/debug
+134 verbose headers { date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+134 verbose headers   via: '1.1 varnish',
+134 verbose headers   'cache-control': 'max-age=300',
+134 verbose headers   etag: '"9K1MWGO25MI6JV4O209795NK5"',
+134 verbose headers   age: '195',
+134 verbose headers   connection: 'keep-alive',
+134 verbose headers   'x-served-by': 'cache-ams4145-AMS',
+134 verbose headers   'x-cache': 'HIT',
+134 verbose headers   'x-cache-hits': '7',
+134 verbose headers   'x-timer': 'S1465773912.360501,VS0,VE0',
+134 verbose headers   vary: 'Accept-Encoding' }
+135 silly get cb [ 304,
+135 silly get   { date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+135 silly get     via: '1.1 varnish',
+135 silly get     'cache-control': 'max-age=300',
+135 silly get     etag: '"9K1MWGO25MI6JV4O209795NK5"',
+135 silly get     age: '195',
+135 silly get     connection: 'keep-alive',
+135 silly get     'x-served-by': 'cache-ams4145-AMS',
+135 silly get     'x-cache': 'HIT',
+135 silly get     'x-cache-hits': '7',
+135 silly get     'x-timer': 'S1465773912.360501,VS0,VE0',
+135 silly get     vary: 'Accept-Encoding' } ]
+136 verbose etag https://registry.npmjs.org/debug from cache
+137 verbose get saving debug to /home/luka/.npm/registry.npmjs.org/debug/.cache.json
+138 silly resolveWithNewModule debug@2.2.0 checking installable status
+139 silly cache add args [ 'debug@^2.2.0', null ]
+140 verbose cache add spec debug@^2.2.0
+141 silly cache add parsed spec Result {
+141 silly cache add   raw: 'debug@^2.2.0',
+141 silly cache add   scope: null,
+141 silly cache add   name: 'debug',
+141 silly cache add   rawSpec: '^2.2.0',
+141 silly cache add   spec: '>=2.2.0 <3.0.0',
+141 silly cache add   type: 'range' }
+142 silly addNamed debug@>=2.2.0 <3.0.0
+143 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for debug
+144 silly addNameRange { name: 'debug', range: '>=2.2.0 <3.0.0', hasData: false }
+145 silly mapToRegistry name debug
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry uri https://registry.npmjs.org/debug
+149 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+150 http 304 https://registry.npmjs.org/minimatch
+151 verbose headers { date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+151 verbose headers   via: '1.1 varnish',
+151 verbose headers   'cache-control': 'max-age=300',
+151 verbose headers   etag: '"78KV3LAIGK70DO4BT3WW2Q5DO"',
+151 verbose headers   age: '186',
+151 verbose headers   connection: 'keep-alive',
+151 verbose headers   'x-served-by': 'cache-ams4125-AMS',
+151 verbose headers   'x-cache': 'HIT',
+151 verbose headers   'x-cache-hits': '6',
+151 verbose headers   'x-timer': 'S1465773912.372000,VS0,VE0',
+151 verbose headers   vary: 'Accept-Encoding' }
+152 silly get cb [ 304,
+152 silly get   { date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+152 silly get     via: '1.1 varnish',
+152 silly get     'cache-control': 'max-age=300',
+152 silly get     etag: '"78KV3LAIGK70DO4BT3WW2Q5DO"',
+152 silly get     age: '186',
+152 silly get     connection: 'keep-alive',
+152 silly get     'x-served-by': 'cache-ams4125-AMS',
+152 silly get     'x-cache': 'HIT',
+152 silly get     'x-cache-hits': '6',
+152 silly get     'x-timer': 'S1465773912.372000,VS0,VE0',
+152 silly get     vary: 'Accept-Encoding' } ]
+153 verbose etag https://registry.npmjs.org/minimatch from cache
+154 verbose get saving minimatch to /home/luka/.npm/registry.npmjs.org/minimatch/.cache.json
+155 verbose get https://registry.npmjs.org/debug not expired, no request
+156 silly addNameRange number 2 { name: 'debug', range: '>=2.2.0 <3.0.0', hasData: true }
+157 silly addNameRange versions [ 'debug',
+157 silly addNameRange   [ '0.0.1',
+157 silly addNameRange     '0.1.0',
+157 silly addNameRange     '0.2.0',
+157 silly addNameRange     '0.3.0',
+157 silly addNameRange     '0.4.0',
+157 silly addNameRange     '0.4.1',
+157 silly addNameRange     '0.5.0',
+157 silly addNameRange     '0.6.0',
+157 silly addNameRange     '0.7.0',
+157 silly addNameRange     '0.7.1',
+157 silly addNameRange     '0.7.2',
+157 silly addNameRange     '0.7.3',
+157 silly addNameRange     '0.7.4',
+157 silly addNameRange     '0.8.0',
+157 silly addNameRange     '0.8.1',
+157 silly addNameRange     '1.0.0',
+157 silly addNameRange     '1.0.1',
+157 silly addNameRange     '1.0.2',
+157 silly addNameRange     '1.0.3',
+157 silly addNameRange     '1.0.4',
+157 silly addNameRange     '2.0.0',
+157 silly addNameRange     '2.1.0',
+157 silly addNameRange     '2.1.1',
+157 silly addNameRange     '2.1.2',
+157 silly addNameRange     '2.1.3',
+157 silly addNameRange     '2.2.0' ] ]
+158 silly addNamed debug@2.2.0
+159 verbose addNamed "2.2.0" is a plain semver version for debug
+160 silly resolveWithNewModule minimatch@3.0.0 checking installable status
+161 silly cache add args [ 'minimatch@^3.0.0', null ]
+162 verbose cache add spec minimatch@^3.0.0
+163 silly cache add parsed spec Result {
+163 silly cache add   raw: 'minimatch@^3.0.0',
+163 silly cache add   scope: null,
+163 silly cache add   name: 'minimatch',
+163 silly cache add   rawSpec: '^3.0.0',
+163 silly cache add   spec: '>=3.0.0 <4.0.0',
+163 silly cache add   type: 'range' }
+164 silly addNamed minimatch@>=3.0.0 <4.0.0
+165 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for minimatch
+166 silly addNameRange { name: 'minimatch', range: '>=3.0.0 <4.0.0', hasData: false }
+167 silly mapToRegistry name minimatch
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+171 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+172 verbose get https://registry.npmjs.org/minimatch not expired, no request
+173 silly addNameRange number 2 { name: 'minimatch', range: '>=3.0.0 <4.0.0', hasData: true }
+174 silly addNameRange versions [ 'minimatch',
+174 silly addNameRange   [ '0.0.1',
+174 silly addNameRange     '0.0.2',
+174 silly addNameRange     '0.0.4',
+174 silly addNameRange     '0.0.5',
+174 silly addNameRange     '0.1.1',
+174 silly addNameRange     '0.1.2',
+174 silly addNameRange     '0.1.3',
+174 silly addNameRange     '0.1.4',
+174 silly addNameRange     '0.1.5',
+174 silly addNameRange     '0.2.0',
+174 silly addNameRange     '0.2.2',
+174 silly addNameRange     '0.2.3',
+174 silly addNameRange     '0.2.4',
+174 silly addNameRange     '0.2.5',
+174 silly addNameRange     '0.2.6',
+174 silly addNameRange     '0.2.7',
+174 silly addNameRange     '0.2.8',
+174 silly addNameRange     '0.2.9',
+174 silly addNameRange     '0.2.10',
+174 silly addNameRange     '0.2.11',
+174 silly addNameRange     '0.2.12',
+174 silly addNameRange     '0.2.13',
+174 silly addNameRange     '0.2.14',
+174 silly addNameRange     '0.3.0',
+174 silly addNameRange     '0.4.0',
+174 silly addNameRange     '1.0.0',
+174 silly addNameRange     '2.0.0',
+174 silly addNameRange     '2.0.1',
+174 silly addNameRange     '2.0.2',
+174 silly addNameRange     '2.0.3',
+174 silly addNameRange     '2.0.4',
+174 silly addNameRange     '2.0.5',
+174 silly addNameRange     '2.0.6',
+174 silly addNameRange     '2.0.7',
+174 silly addNameRange     '2.0.8',
+174 silly addNameRange     '2.0.9',
+174 silly addNameRange     '2.0.10',
+174 silly addNameRange     '3.0.0' ] ]
+175 silly addNamed minimatch@3.0.0
+176 verbose addNamed "3.0.0" is a plain semver version for minimatch
+177 silly cache afterAdd debug@2.2.0
+178 verbose afterAdd /home/luka/.npm/debug/2.2.0/package/package.json not in flight; writing
+179 silly cache afterAdd minimatch@3.0.0
+180 verbose afterAdd /home/luka/.npm/minimatch/3.0.0/package/package.json not in flight; writing
+181 verbose afterAdd /home/luka/.npm/debug/2.2.0/package/package.json written
+182 verbose afterAdd /home/luka/.npm/minimatch/3.0.0/package/package.json written
+183 http 200 https://registry.npmjs.org/fs-extra
+184 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+184 verbose headers   etag: '"9O4U3LS706SRUW2RAU47QTCIO"',
+184 verbose headers   'content-type': 'application/json',
+184 verbose headers   'content-encoding': 'gzip',
+184 verbose headers   'cache-control': 'max-age=300',
+184 verbose headers   'content-length': '17861',
+184 verbose headers   'accept-ranges': 'bytes',
+184 verbose headers   date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+184 verbose headers   via: '1.1 varnish',
+184 verbose headers   age: '269',
+184 verbose headers   connection: 'keep-alive',
+184 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+184 verbose headers   'x-cache': 'HIT',
+184 verbose headers   'x-cache-hits': '2',
+184 verbose headers   'x-timer': 'S1465773912.364886,VS0,VE0',
+184 verbose headers   vary: 'Accept-Encoding' }
+185 silly get cb [ 200,
+185 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+185 silly get     etag: '"9O4U3LS706SRUW2RAU47QTCIO"',
+185 silly get     'content-type': 'application/json',
+185 silly get     'content-encoding': 'gzip',
+185 silly get     'cache-control': 'max-age=300',
+185 silly get     'content-length': '17861',
+185 silly get     'accept-ranges': 'bytes',
+185 silly get     date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+185 silly get     via: '1.1 varnish',
+185 silly get     age: '269',
+185 silly get     connection: 'keep-alive',
+185 silly get     'x-served-by': 'cache-ams4134-AMS',
+185 silly get     'x-cache': 'HIT',
+185 silly get     'x-cache-hits': '2',
+185 silly get     'x-timer': 'S1465773912.364886,VS0,VE0',
+185 silly get     vary: 'Accept-Encoding' } ]
+186 verbose get saving fs-extra to /home/luka/.npm/registry.npmjs.org/fs-extra/.cache.json
+187 http 200 https://registry.npmjs.org/lodash
+188 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+188 verbose headers   etag: '"335ACW5DHCXH2Y3TN0TOYFBVR"',
+188 verbose headers   'content-type': 'application/json',
+188 verbose headers   'content-encoding': 'gzip',
+188 verbose headers   'cache-control': 'max-age=300',
+188 verbose headers   'content-length': '17527',
+188 verbose headers   'accept-ranges': 'bytes',
+188 verbose headers   date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+188 verbose headers   via: '1.1 varnish',
+188 verbose headers   age: '283',
+188 verbose headers   connection: 'keep-alive',
+188 verbose headers   'x-served-by': 'cache-ams4142-AMS',
+188 verbose headers   'x-cache': 'HIT',
+188 verbose headers   'x-cache-hits': '6',
+188 verbose headers   'x-timer': 'S1465773912.364867,VS0,VE0',
+188 verbose headers   vary: 'Accept-Encoding' }
+189 silly get cb [ 200,
+189 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+189 silly get     etag: '"335ACW5DHCXH2Y3TN0TOYFBVR"',
+189 silly get     'content-type': 'application/json',
+189 silly get     'content-encoding': 'gzip',
+189 silly get     'cache-control': 'max-age=300',
+189 silly get     'content-length': '17527',
+189 silly get     'accept-ranges': 'bytes',
+189 silly get     date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+189 silly get     via: '1.1 varnish',
+189 silly get     age: '283',
+189 silly get     connection: 'keep-alive',
+189 silly get     'x-served-by': 'cache-ams4142-AMS',
+189 silly get     'x-cache': 'HIT',
+189 silly get     'x-cache-hits': '6',
+189 silly get     'x-timer': 'S1465773912.364867,VS0,VE0',
+189 silly get     vary: 'Accept-Encoding' } ]
+190 verbose get saving lodash to /home/luka/.npm/registry.npmjs.org/lodash/.cache.json
+191 silly resolveWithNewModule fs-extra@0.26.7 checking installable status
+192 silly cache add args [ 'fs-extra@^0.26.0', null ]
+193 verbose cache add spec fs-extra@^0.26.0
+194 silly cache add parsed spec Result {
+194 silly cache add   raw: 'fs-extra@^0.26.0',
+194 silly cache add   scope: null,
+194 silly cache add   name: 'fs-extra',
+194 silly cache add   rawSpec: '^0.26.0',
+194 silly cache add   spec: '>=0.26.0 <0.27.0',
+194 silly cache add   type: 'range' }
+195 silly addNamed fs-extra@>=0.26.0 <0.27.0
+196 verbose addNamed ">=0.26.0 <0.27.0" is a valid semver range for fs-extra
+197 silly addNameRange { name: 'fs-extra', range: '>=0.26.0 <0.27.0', hasData: false }
+198 silly mapToRegistry name fs-extra
+199 silly mapToRegistry using default registry
+200 silly mapToRegistry registry https://registry.npmjs.org/
+201 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+202 verbose addNameRange registry:https://registry.npmjs.org/fs-extra not in flight; fetching
+203 silly resolveWithNewModule lodash@3.10.1 checking installable status
+204 silly cache add args [ 'lodash@^3.10.1', null ]
+205 verbose cache add spec lodash@^3.10.1
+206 silly cache add parsed spec Result {
+206 silly cache add   raw: 'lodash@^3.10.1',
+206 silly cache add   scope: null,
+206 silly cache add   name: 'lodash',
+206 silly cache add   rawSpec: '^3.10.1',
+206 silly cache add   spec: '>=3.10.1 <4.0.0',
+206 silly cache add   type: 'range' }
+207 silly addNamed lodash@>=3.10.1 <4.0.0
+208 verbose addNamed ">=3.10.1 <4.0.0" is a valid semver range for lodash
+209 silly addNameRange { name: 'lodash', range: '>=3.10.1 <4.0.0', hasData: false }
+210 silly mapToRegistry name lodash
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry uri https://registry.npmjs.org/lodash
+214 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+215 verbose get https://registry.npmjs.org/fs-extra not expired, no request
+216 silly addNameRange number 2 { name: 'fs-extra', range: '>=0.26.0 <0.27.0', hasData: true }
+217 silly addNameRange versions [ 'fs-extra',
+217 silly addNameRange   [ '0.0.1',
+217 silly addNameRange     '0.0.11',
+217 silly addNameRange     '0.0.3',
+217 silly addNameRange     '0.0.4',
+217 silly addNameRange     '0.1.0',
+217 silly addNameRange     '0.1.1',
+217 silly addNameRange     '0.1.2',
+217 silly addNameRange     '0.1.3',
+217 silly addNameRange     '0.2.0',
+217 silly addNameRange     '0.2.1',
+217 silly addNameRange     '0.3.0',
+217 silly addNameRange     '0.3.1',
+217 silly addNameRange     '0.3.2',
+217 silly addNameRange     '0.4.0',
+217 silly addNameRange     '0.5.0',
+217 silly addNameRange     '0.6.0',
+217 silly addNameRange     '0.6.1',
+217 silly addNameRange     '0.6.2',
+217 silly addNameRange     '0.6.3',
+217 silly addNameRange     '0.6.4',
+217 silly addNameRange     '0.7.0',
+217 silly addNameRange     '0.7.1',
+217 silly addNameRange     '0.8.0',
+217 silly addNameRange     '0.8.1',
+217 silly addNameRange     '0.9.0',
+217 silly addNameRange     '0.9.1',
+217 silly addNameRange     '0.10.0',
+217 silly addNameRange     '0.11.0',
+217 silly addNameRange     '0.11.1',
+217 silly addNameRange     '0.12.0',
+217 silly addNameRange     '0.13.0',
+217 silly addNameRange     '0.14.0',
+217 silly addNameRange     '0.15.0',
+217 silly addNameRange     '0.16.0',
+217 silly addNameRange     '0.16.1',
+217 silly addNameRange     '0.16.2',
+217 silly addNameRange     '0.16.3',
+217 silly addNameRange     '0.16.4',
+217 silly addNameRange     '0.16.5',
+217 silly addNameRange     '0.17.0',
+217 silly addNameRange     '0.18.0',
+217 silly addNameRange     '0.18.1',
+217 silly addNameRange     '0.18.2',
+217 silly addNameRange     '0.18.3',
+217 silly addNameRange     '0.18.4',
+217 silly addNameRange     '0.19.0',
+217 silly addNameRange     '0.20.0',
+217 silly addNameRange     '0.20.1',
+217 silly addNameRange     '0.21.0',
+217 silly addNameRange     '0.22.0',
+217 silly addNameRange     '0.22.1',
+217 silly addNameRange     '0.23.0',
+217 silly addNameRange     '0.23.1',
+217 silly addNameRange     '0.24.0',
+217 silly addNameRange     '0.25.0',
+217 silly addNameRange     '0.26.0',
+217 silly addNameRange     '0.26.1',
+217 silly addNameRange     '0.26.2',
+217 silly addNameRange     '0.26.3',
+217 silly addNameRange     '0.26.4',
+217 silly addNameRange     '0.26.5',
+217 silly addNameRange     '0.26.6',
+217 silly addNameRange     '0.26.7',
+217 silly addNameRange     '0.27.0',
+217 silly addNameRange     '0.28.0',
+217 silly addNameRange     '0.29.0',
+217 silly addNameRange     '0.30.0' ] ]
+218 silly addNamed fs-extra@0.26.7
+219 verbose addNamed "0.26.7" is a plain semver version for fs-extra
+220 verbose get https://registry.npmjs.org/lodash not expired, no request
+221 silly addNameRange number 2 { name: 'lodash', range: '>=3.10.1 <4.0.0', hasData: true }
+222 silly addNameRange versions [ 'lodash',
+222 silly addNameRange   [ '0.1.0',
+222 silly addNameRange     '0.2.0',
+222 silly addNameRange     '0.2.1',
+222 silly addNameRange     '0.2.2',
+222 silly addNameRange     '0.3.0',
+222 silly addNameRange     '0.3.1',
+222 silly addNameRange     '0.3.2',
+222 silly addNameRange     '0.4.0',
+222 silly addNameRange     '0.4.1',
+222 silly addNameRange     '0.4.2',
+222 silly addNameRange     '0.5.0-rc.1',
+222 silly addNameRange     '0.5.0',
+222 silly addNameRange     '0.5.1',
+222 silly addNameRange     '0.5.2',
+222 silly addNameRange     '0.6.0',
+222 silly addNameRange     '0.6.1',
+222 silly addNameRange     '0.7.0',
+222 silly addNameRange     '0.8.0',
+222 silly addNameRange     '0.8.1',
+222 silly addNameRange     '0.8.2',
+222 silly addNameRange     '0.9.0',
+222 silly addNameRange     '0.9.1',
+222 silly addNameRange     '0.9.2',
+222 silly addNameRange     '0.10.0',
+222 silly addNameRange     '1.0.0-rc.1',
+222 silly addNameRange     '1.0.0-rc.2',
+222 silly addNameRange     '1.0.0-rc.3',
+222 silly addNameRange     '1.0.0',
+222 silly addNameRange     '1.0.1',
+222 silly addNameRange     '1.1.0',
+222 silly addNameRange     '1.1.1',
+222 silly addNameRange     '1.2.0',
+222 silly addNameRange     '1.2.1',
+222 silly addNameRange     '1.3.0',
+222 silly addNameRange     '1.3.1',
+222 silly addNameRange     '2.0.0',
+222 silly addNameRange     '2.1.0',
+222 silly addNameRange     '2.2.0',
+222 silly addNameRange     '2.2.1',
+222 silly addNameRange     '2.3.0',
+222 silly addNameRange     '2.4.0',
+222 silly addNameRange     '2.4.1',
+222 silly addNameRange     '3.0.0',
+222 silly addNameRange     '3.0.1',
+222 silly addNameRange     '3.1.0',
+222 silly addNameRange     '3.2.0',
+222 silly addNameRange     '3.3.0',
+222 silly addNameRange     '3.3.1',
+222 silly addNameRange     '3.4.0',
+222 silly addNameRange     '3.5.0',
+222 silly addNameRange     '3.6.0',
+222 silly addNameRange     '1.0.2',
+222 silly addNameRange     '3.7.0',
+222 silly addNameRange     '2.4.2',
+222 silly addNameRange     '3.8.0',
+222 silly addNameRange     '3.9.0',
+222 silly addNameRange     '3.9.1',
+222 silly addNameRange     '3.9.2',
+222 silly addNameRange     '3.9.3',
+222 silly addNameRange     '3.10.0',
+222 silly addNameRange     '3.10.1',
+222 silly addNameRange     '4.0.0',
+222 silly addNameRange     '4.0.1',
+222 silly addNameRange     '4.1.0',
+222 silly addNameRange     '4.2.0',
+222 silly addNameRange     '4.2.1',
+222 silly addNameRange     '4.3.0',
+222 silly addNameRange     '4.4.0',
+222 silly addNameRange     '4.5.0',
+222 silly addNameRange     '4.5.1',
+222 silly addNameRange     '4.6.0',
+222 silly addNameRange     '4.6.1',
+222 silly addNameRange     '4.7.0',
+222 silly addNameRange     '4.8.0',
+222 silly addNameRange     '4.8.1',
+222 silly addNameRange     '4.8.2',
+222 silly addNameRange     '4.9.0',
+222 silly addNameRange     '4.10.0',
+222 silly addNameRange     '4.11.0',
+222 silly addNameRange     '4.11.1',
+222 silly addNameRange     '4.11.2',
+222 silly addNameRange     '4.12.0',
+222 silly addNameRange     '4.13.0',
+222 silly addNameRange     '4.13.1' ] ]
+223 silly addNamed lodash@3.10.1
+224 verbose addNamed "3.10.1" is a plain semver version for lodash
+225 silly cache afterAdd lodash@3.10.1
+226 verbose afterAdd /home/luka/.npm/lodash/3.10.1/package/package.json not in flight; writing
+227 silly cache afterAdd fs-extra@0.26.7
+228 verbose afterAdd /home/luka/.npm/fs-extra/0.26.7/package/package.json not in flight; writing
+229 verbose afterAdd /home/luka/.npm/lodash/3.10.1/package/package.json written
+230 verbose afterAdd /home/luka/.npm/fs-extra/0.26.7/package/package.json written
+231 http 200 https://registry.npmjs.org/key-mirror
+232 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+232 verbose headers   etag: '"2S89V0P2JVAYMXIRI8KPXHTLS"',
+232 verbose headers   'content-type': 'application/json',
+232 verbose headers   'content-encoding': 'gzip',
+232 verbose headers   'cache-control': 'max-age=300',
+232 verbose headers   'content-length': '1068',
+232 verbose headers   'accept-ranges': 'bytes',
+232 verbose headers   date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+232 verbose headers   via: '1.1 varnish',
+232 verbose headers   age: '0',
+232 verbose headers   connection: 'keep-alive',
+232 verbose headers   'x-served-by': 'cache-ams4136-AMS',
+232 verbose headers   'x-cache': 'HIT',
+232 verbose headers   'x-cache-hits': '1',
+232 verbose headers   'x-timer': 'S1465773912.348170,VS0,VE95',
+232 verbose headers   vary: 'Accept-Encoding' }
+233 silly get cb [ 200,
+233 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+233 silly get     etag: '"2S89V0P2JVAYMXIRI8KPXHTLS"',
+233 silly get     'content-type': 'application/json',
+233 silly get     'content-encoding': 'gzip',
+233 silly get     'cache-control': 'max-age=300',
+233 silly get     'content-length': '1068',
+233 silly get     'accept-ranges': 'bytes',
+233 silly get     date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+233 silly get     via: '1.1 varnish',
+233 silly get     age: '0',
+233 silly get     connection: 'keep-alive',
+233 silly get     'x-served-by': 'cache-ams4136-AMS',
+233 silly get     'x-cache': 'HIT',
+233 silly get     'x-cache-hits': '1',
+233 silly get     'x-timer': 'S1465773912.348170,VS0,VE95',
+233 silly get     vary: 'Accept-Encoding' } ]
+234 verbose get saving key-mirror to /home/luka/.npm/registry.npmjs.org/key-mirror/.cache.json
+235 silly resolveWithNewModule key-mirror@1.0.1 checking installable status
+236 silly cache add args [ 'key-mirror@^1.0.1', null ]
+237 verbose cache add spec key-mirror@^1.0.1
+238 silly cache add parsed spec Result {
+238 silly cache add   raw: 'key-mirror@^1.0.1',
+238 silly cache add   scope: null,
+238 silly cache add   name: 'key-mirror',
+238 silly cache add   rawSpec: '^1.0.1',
+238 silly cache add   spec: '>=1.0.1 <2.0.0',
+238 silly cache add   type: 'range' }
+239 silly addNamed key-mirror@>=1.0.1 <2.0.0
+240 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for key-mirror
+241 silly addNameRange { name: 'key-mirror', range: '>=1.0.1 <2.0.0', hasData: false }
+242 silly mapToRegistry name key-mirror
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npmjs.org/
+245 silly mapToRegistry uri https://registry.npmjs.org/key-mirror
+246 verbose addNameRange registry:https://registry.npmjs.org/key-mirror not in flight; fetching
+247 verbose get https://registry.npmjs.org/key-mirror not expired, no request
+248 silly addNameRange number 2 { name: 'key-mirror', range: '>=1.0.1 <2.0.0', hasData: true }
+249 silly addNameRange versions [ 'key-mirror', [ '1.0.0', '1.0.1' ] ]
+250 silly addNamed key-mirror@1.0.1
+251 verbose addNamed "1.0.1" is a plain semver version for key-mirror
+252 silly mapToRegistry name key-mirror
+253 silly mapToRegistry using default registry
+254 silly mapToRegistry registry https://registry.npmjs.org/
+255 silly mapToRegistry uri https://registry.npmjs.org/key-mirror
+256 verbose addRemoteTarball https://registry.npmjs.org/key-mirror/-/key-mirror-1.0.1.tgz not in flight; adding
+257 verbose addRemoteTarball [ 'https://registry.npmjs.org/key-mirror/-/key-mirror-1.0.1.tgz',
+257 verbose addRemoteTarball   '0a132d5c8a82a3a4fcd7df732ff9510d04ab366b' ]
+258 info retry fetch attempt 1 at 1:25:12 AM
+259 info attempt registry request try #1 at 1:25:12 AM
+260 http fetch GET https://registry.npmjs.org/key-mirror/-/key-mirror-1.0.1.tgz
+261 http fetch 200 https://registry.npmjs.org/key-mirror/-/key-mirror-1.0.1.tgz
+262 silly fetchAndShaCheck shasum 0a132d5c8a82a3a4fcd7df732ff9510d04ab366b
+263 verbose addTmpTarball /tmp/npm-14403-e5a4445f/registry.npmjs.org/key-mirror/-/key-mirror-1.0.1.tgz not in flight; adding
+264 verbose addTmpTarball already have metadata; skipping unpack for key-mirror@1.0.1
+265 silly cache afterAdd key-mirror@1.0.1
+266 verbose afterAdd /home/luka/.npm/key-mirror/1.0.1/package/package.json not in flight; writing
+267 verbose afterAdd /home/luka/.npm/key-mirror/1.0.1/package/package.json written
+268 http 200 https://registry.npmjs.org/ensure-array
+269 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+269 verbose headers   etag: '"AM126ERFC2RNLYSIKB9COXU9K"',
+269 verbose headers   'content-type': 'application/json',
+269 verbose headers   'content-encoding': 'gzip',
+269 verbose headers   'cache-control': 'max-age=300',
+269 verbose headers   'content-length': '1990',
+269 verbose headers   'accept-ranges': 'bytes',
+269 verbose headers   date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+269 verbose headers   via: '1.1 varnish',
+269 verbose headers   age: '0',
+269 verbose headers   connection: 'keep-alive',
+269 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+269 verbose headers   'x-cache': 'MISS',
+269 verbose headers   'x-cache-hits': '0',
+269 verbose headers   'x-timer': 'S1465773912.348155,VS0,VE411',
+269 verbose headers   vary: 'Accept-Encoding' }
+270 silly get cb [ 200,
+270 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+270 silly get     etag: '"AM126ERFC2RNLYSIKB9COXU9K"',
+270 silly get     'content-type': 'application/json',
+270 silly get     'content-encoding': 'gzip',
+270 silly get     'cache-control': 'max-age=300',
+270 silly get     'content-length': '1990',
+270 silly get     'accept-ranges': 'bytes',
+270 silly get     date: 'Sun, 12 Jun 2016 23:25:12 GMT',
+270 silly get     via: '1.1 varnish',
+270 silly get     age: '0',
+270 silly get     connection: 'keep-alive',
+270 silly get     'x-served-by': 'cache-ams4135-AMS',
+270 silly get     'x-cache': 'MISS',
+270 silly get     'x-cache-hits': '0',
+270 silly get     'x-timer': 'S1465773912.348155,VS0,VE411',
+270 silly get     vary: 'Accept-Encoding' } ]
+271 verbose get saving ensure-array to /home/luka/.npm/registry.npmjs.org/ensure-array/.cache.json
+272 silly resolveWithNewModule ensure-array@0.0.5 checking installable status
+273 silly cache add args [ 'ensure-array@0.0.5', null ]
+274 verbose cache add spec ensure-array@0.0.5
+275 silly cache add parsed spec Result {
+275 silly cache add   raw: 'ensure-array@0.0.5',
+275 silly cache add   scope: null,
+275 silly cache add   name: 'ensure-array',
+275 silly cache add   rawSpec: '0.0.5',
+275 silly cache add   spec: '0.0.5',
+275 silly cache add   type: 'version' }
+276 silly addNamed ensure-array@0.0.5
+277 verbose addNamed "0.0.5" is a plain semver version for ensure-array
+278 silly mapToRegistry name ensure-array
+279 silly mapToRegistry using default registry
+280 silly mapToRegistry registry https://registry.npmjs.org/
+281 silly mapToRegistry uri https://registry.npmjs.org/ensure-array
+282 verbose addNameVersion registry:https://registry.npmjs.org/ensure-array not in flight; fetching
+283 verbose get https://registry.npmjs.org/ensure-array not expired, no request
+284 silly mapToRegistry name ensure-array
+285 silly mapToRegistry using default registry
+286 silly mapToRegistry registry https://registry.npmjs.org/
+287 silly mapToRegistry uri https://registry.npmjs.org/ensure-array
+288 verbose addRemoteTarball https://registry.npmjs.org/ensure-array/-/ensure-array-0.0.5.tgz not in flight; adding
+289 verbose addRemoteTarball [ 'https://registry.npmjs.org/ensure-array/-/ensure-array-0.0.5.tgz',
+289 verbose addRemoteTarball   '355becc382c8eb99d68a49b450ae9e6e81102715' ]
+290 info retry fetch attempt 1 at 1:25:12 AM
+291 info attempt registry request try #1 at 1:25:12 AM
+292 http fetch GET https://registry.npmjs.org/ensure-array/-/ensure-array-0.0.5.tgz
+293 http fetch 200 https://registry.npmjs.org/ensure-array/-/ensure-array-0.0.5.tgz
+294 silly fetchAndShaCheck shasum 355becc382c8eb99d68a49b450ae9e6e81102715
+295 verbose addTmpTarball /tmp/npm-14403-e5a4445f/registry.npmjs.org/ensure-array/-/ensure-array-0.0.5.tgz not in flight; adding
+296 verbose addTmpTarball already have metadata; skipping unpack for ensure-array@0.0.5
+297 silly cache afterAdd ensure-array@0.0.5
+298 verbose afterAdd /home/luka/.npm/ensure-array/0.0.5/package/package.json not in flight; writing
+299 verbose afterAdd /home/luka/.npm/ensure-array/0.0.5/package/package.json written
+300 http 200 https://registry.npmjs.org/deep-diff
+301 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+301 verbose headers   etag: '"B9PE3JOM33DFJ4P1EAAAQESVO"',
+301 verbose headers   'content-type': 'application/json',
+301 verbose headers   'content-encoding': 'gzip',
+301 verbose headers   'cache-control': 'max-age=300',
+301 verbose headers   'content-length': '6970',
+301 verbose headers   'accept-ranges': 'bytes',
+301 verbose headers   date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+301 verbose headers   via: '1.1 varnish',
+301 verbose headers   age: '0',
+301 verbose headers   connection: 'keep-alive',
+301 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+301 verbose headers   'x-cache': 'HIT',
+301 verbose headers   'x-cache-hits': '1',
+301 verbose headers   'x-timer': 'S1465773912.347844,VS0,VE712',
+301 verbose headers   vary: 'Accept-Encoding' }
+302 silly get cb [ 200,
+302 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+302 silly get     etag: '"B9PE3JOM33DFJ4P1EAAAQESVO"',
+302 silly get     'content-type': 'application/json',
+302 silly get     'content-encoding': 'gzip',
+302 silly get     'cache-control': 'max-age=300',
+302 silly get     'content-length': '6970',
+302 silly get     'accept-ranges': 'bytes',
+302 silly get     date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+302 silly get     via: '1.1 varnish',
+302 silly get     age: '0',
+302 silly get     connection: 'keep-alive',
+302 silly get     'x-served-by': 'cache-ams4132-AMS',
+302 silly get     'x-cache': 'HIT',
+302 silly get     'x-cache-hits': '1',
+302 silly get     'x-timer': 'S1465773912.347844,VS0,VE712',
+302 silly get     vary: 'Accept-Encoding' } ]
+303 verbose get saving deep-diff to /home/luka/.npm/registry.npmjs.org/deep-diff/.cache.json
+304 silly resolveWithNewModule deep-diff@0.3.4 checking installable status
+305 silly cache add args [ 'deep-diff@^0.3.3', null ]
+306 verbose cache add spec deep-diff@^0.3.3
+307 silly cache add parsed spec Result {
+307 silly cache add   raw: 'deep-diff@^0.3.3',
+307 silly cache add   scope: null,
+307 silly cache add   name: 'deep-diff',
+307 silly cache add   rawSpec: '^0.3.3',
+307 silly cache add   spec: '>=0.3.3 <0.4.0',
+307 silly cache add   type: 'range' }
+308 silly addNamed deep-diff@>=0.3.3 <0.4.0
+309 verbose addNamed ">=0.3.3 <0.4.0" is a valid semver range for deep-diff
+310 silly addNameRange { name: 'deep-diff', range: '>=0.3.3 <0.4.0', hasData: false }
+311 silly mapToRegistry name deep-diff
+312 silly mapToRegistry using default registry
+313 silly mapToRegistry registry https://registry.npmjs.org/
+314 silly mapToRegistry uri https://registry.npmjs.org/deep-diff
+315 verbose addNameRange registry:https://registry.npmjs.org/deep-diff not in flight; fetching
+316 verbose get https://registry.npmjs.org/deep-diff not expired, no request
+317 silly addNameRange number 2 { name: 'deep-diff', range: '>=0.3.3 <0.4.0', hasData: true }
+318 silly addNameRange versions [ 'deep-diff',
+318 silly addNameRange   [ '0.1.0',
+318 silly addNameRange     '0.1.1',
+318 silly addNameRange     '0.1.2',
+318 silly addNameRange     '0.1.3',
+318 silly addNameRange     '0.1.4',
+318 silly addNameRange     '0.1.6',
+318 silly addNameRange     '0.1.7',
+318 silly addNameRange     '0.2.0',
+318 silly addNameRange     '0.3.0',
+318 silly addNameRange     '0.3.1',
+318 silly addNameRange     '0.3.2',
+318 silly addNameRange     '0.3.3',
+318 silly addNameRange     '0.3.4' ] ]
+319 silly addNamed deep-diff@0.3.4
+320 verbose addNamed "0.3.4" is a plain semver version for deep-diff
+321 silly mapToRegistry name deep-diff
+322 silly mapToRegistry using default registry
+323 silly mapToRegistry registry https://registry.npmjs.org/
+324 silly mapToRegistry uri https://registry.npmjs.org/deep-diff
+325 verbose addRemoteTarball https://registry.npmjs.org/deep-diff/-/deep-diff-0.3.4.tgz not in flight; adding
+326 verbose addRemoteTarball [ 'https://registry.npmjs.org/deep-diff/-/deep-diff-0.3.4.tgz',
+326 verbose addRemoteTarball   'aac5c39952236abe5f037a2349060ba01b00ae48' ]
+327 info retry fetch attempt 1 at 1:25:13 AM
+328 info attempt registry request try #1 at 1:25:13 AM
+329 http fetch GET https://registry.npmjs.org/deep-diff/-/deep-diff-0.3.4.tgz
+330 http fetch 200 https://registry.npmjs.org/deep-diff/-/deep-diff-0.3.4.tgz
+331 silly fetchAndShaCheck shasum aac5c39952236abe5f037a2349060ba01b00ae48
+332 verbose addTmpTarball /tmp/npm-14403-e5a4445f/registry.npmjs.org/deep-diff/-/deep-diff-0.3.4.tgz not in flight; adding
+333 verbose addTmpTarball already have metadata; skipping unpack for deep-diff@0.3.4
+334 silly cache afterAdd deep-diff@0.3.4
+335 verbose afterAdd /home/luka/.npm/deep-diff/0.3.4/package/package.json not in flight; writing
+336 verbose afterAdd /home/luka/.npm/deep-diff/0.3.4/package/package.json written
+337 silly fetchNamedPackageData ms
+338 silly mapToRegistry name ms
+339 silly mapToRegistry using default registry
+340 silly mapToRegistry registry https://registry.npmjs.org/
+341 silly mapToRegistry uri https://registry.npmjs.org/ms
+342 verbose request uri https://registry.npmjs.org/ms
+343 verbose request no auth needed
+344 info attempt registry request try #1 at 1:25:13 AM
+345 verbose etag "5143492BBX5I18XHV9RBWJ2GY"
+346 http request GET https://registry.npmjs.org/ms
+347 http 304 https://registry.npmjs.org/ms
+348 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+348 verbose headers   via: '1.1 varnish',
+348 verbose headers   'cache-control': 'max-age=300',
+348 verbose headers   etag: '"5143492BBX5I18XHV9RBWJ2GY"',
+348 verbose headers   age: '187',
+348 verbose headers   connection: 'keep-alive',
+348 verbose headers   'x-served-by': 'cache-ams4127-AMS',
+348 verbose headers   'x-cache': 'HIT',
+348 verbose headers   'x-cache-hits': '6',
+348 verbose headers   'x-timer': 'S1465773913.320056,VS0,VE0',
+348 verbose headers   vary: 'Accept-Encoding' }
+349 silly get cb [ 304,
+349 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+349 silly get     via: '1.1 varnish',
+349 silly get     'cache-control': 'max-age=300',
+349 silly get     etag: '"5143492BBX5I18XHV9RBWJ2GY"',
+349 silly get     age: '187',
+349 silly get     connection: 'keep-alive',
+349 silly get     'x-served-by': 'cache-ams4127-AMS',
+349 silly get     'x-cache': 'HIT',
+349 silly get     'x-cache-hits': '6',
+349 silly get     'x-timer': 'S1465773913.320056,VS0,VE0',
+349 silly get     vary: 'Accept-Encoding' } ]
+350 verbose etag https://registry.npmjs.org/ms from cache
+351 verbose get saving ms to /home/luka/.npm/registry.npmjs.org/ms/.cache.json
+352 silly resolveWithNewModule ms@0.7.1 checking installable status
+353 silly cache add args [ 'ms@0.7.1', null ]
+354 verbose cache add spec ms@0.7.1
+355 silly cache add parsed spec Result {
+355 silly cache add   raw: 'ms@0.7.1',
+355 silly cache add   scope: null,
+355 silly cache add   name: 'ms',
+355 silly cache add   rawSpec: '0.7.1',
+355 silly cache add   spec: '0.7.1',
+355 silly cache add   type: 'version' }
+356 silly addNamed ms@0.7.1
+357 verbose addNamed "0.7.1" is a plain semver version for ms
+358 silly mapToRegistry name ms
+359 silly mapToRegistry using default registry
+360 silly mapToRegistry registry https://registry.npmjs.org/
+361 silly mapToRegistry uri https://registry.npmjs.org/ms
+362 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+363 verbose get https://registry.npmjs.org/ms not expired, no request
+364 silly cache afterAdd ms@0.7.1
+365 verbose afterAdd /home/luka/.npm/ms/0.7.1/package/package.json not in flight; writing
+366 verbose afterAdd /home/luka/.npm/ms/0.7.1/package/package.json written
+367 silly fetchNamedPackageData graceful-fs
+368 silly mapToRegistry name graceful-fs
+369 silly mapToRegistry using default registry
+370 silly mapToRegistry registry https://registry.npmjs.org/
+371 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+372 silly fetchNamedPackageData jsonfile
+373 silly mapToRegistry name jsonfile
+374 silly mapToRegistry using default registry
+375 silly mapToRegistry registry https://registry.npmjs.org/
+376 silly mapToRegistry uri https://registry.npmjs.org/jsonfile
+377 silly fetchNamedPackageData klaw
+378 silly mapToRegistry name klaw
+379 silly mapToRegistry using default registry
+380 silly mapToRegistry registry https://registry.npmjs.org/
+381 silly mapToRegistry uri https://registry.npmjs.org/klaw
+382 silly fetchNamedPackageData path-is-absolute
+383 silly mapToRegistry name path-is-absolute
+384 silly mapToRegistry using default registry
+385 silly mapToRegistry registry https://registry.npmjs.org/
+386 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+387 silly fetchNamedPackageData rimraf
+388 silly mapToRegistry name rimraf
+389 silly mapToRegistry using default registry
+390 silly mapToRegistry registry https://registry.npmjs.org/
+391 silly mapToRegistry uri https://registry.npmjs.org/rimraf
+392 verbose request uri https://registry.npmjs.org/graceful-fs
+393 verbose request no auth needed
+394 info attempt registry request try #1 at 1:25:13 AM
+395 verbose etag "FMU06AXM5Y6LFTITKOQ596SN"
+396 http request GET https://registry.npmjs.org/graceful-fs
+397 verbose request uri https://registry.npmjs.org/klaw
+398 verbose request no auth needed
+399 info attempt registry request try #1 at 1:25:13 AM
+400 verbose etag "2629ZVFXJG9S2OGV0EFTAE34C"
+401 http request GET https://registry.npmjs.org/klaw
+402 verbose request uri https://registry.npmjs.org/path-is-absolute
+403 verbose request no auth needed
+404 info attempt registry request try #1 at 1:25:13 AM
+405 verbose etag "BN5VZYARJTFIZINEV94ZMOHSE"
+406 http request GET https://registry.npmjs.org/path-is-absolute
+407 verbose request uri https://registry.npmjs.org/jsonfile
+408 verbose request no auth needed
+409 info attempt registry request try #1 at 1:25:13 AM
+410 verbose etag "9H1U19XK6PF151R2MC8QMN0HN"
+411 http request GET https://registry.npmjs.org/jsonfile
+412 verbose request uri https://registry.npmjs.org/rimraf
+413 verbose request no auth needed
+414 info attempt registry request try #1 at 1:25:13 AM
+415 verbose etag "7VXFBCS7OMXD19W2BEV0TMP5G"
+416 http request GET https://registry.npmjs.org/rimraf
+417 http 304 https://registry.npmjs.org/klaw
+418 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+418 verbose headers   via: '1.1 varnish',
+418 verbose headers   'cache-control': 'max-age=300',
+418 verbose headers   etag: '"2629ZVFXJG9S2OGV0EFTAE34C"',
+418 verbose headers   age: '254',
+418 verbose headers   connection: 'keep-alive',
+418 verbose headers   'x-served-by': 'cache-ams4136-AMS',
+418 verbose headers   'x-cache': 'HIT',
+418 verbose headers   'x-cache-hits': '1',
+418 verbose headers   'x-timer': 'S1465773913.455524,VS0,VE0',
+418 verbose headers   vary: 'Accept-Encoding' }
+419 silly get cb [ 304,
+419 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+419 silly get     via: '1.1 varnish',
+419 silly get     'cache-control': 'max-age=300',
+419 silly get     etag: '"2629ZVFXJG9S2OGV0EFTAE34C"',
+419 silly get     age: '254',
+419 silly get     connection: 'keep-alive',
+419 silly get     'x-served-by': 'cache-ams4136-AMS',
+419 silly get     'x-cache': 'HIT',
+419 silly get     'x-cache-hits': '1',
+419 silly get     'x-timer': 'S1465773913.455524,VS0,VE0',
+419 silly get     vary: 'Accept-Encoding' } ]
+420 verbose etag https://registry.npmjs.org/klaw from cache
+421 verbose get saving klaw to /home/luka/.npm/registry.npmjs.org/klaw/.cache.json
+422 http 304 https://registry.npmjs.org/jsonfile
+423 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+423 verbose headers   via: '1.1 varnish',
+423 verbose headers   'cache-control': 'max-age=300',
+423 verbose headers   etag: '"9H1U19XK6PF151R2MC8QMN0HN"',
+423 verbose headers   age: '185',
+423 verbose headers   connection: 'keep-alive',
+423 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+423 verbose headers   'x-cache': 'HIT',
+423 verbose headers   'x-cache-hits': '1',
+423 verbose headers   'x-timer': 'S1465773913.455872,VS0,VE0',
+423 verbose headers   vary: 'Accept-Encoding' }
+424 silly get cb [ 304,
+424 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+424 silly get     via: '1.1 varnish',
+424 silly get     'cache-control': 'max-age=300',
+424 silly get     etag: '"9H1U19XK6PF151R2MC8QMN0HN"',
+424 silly get     age: '185',
+424 silly get     connection: 'keep-alive',
+424 silly get     'x-served-by': 'cache-ams4134-AMS',
+424 silly get     'x-cache': 'HIT',
+424 silly get     'x-cache-hits': '1',
+424 silly get     'x-timer': 'S1465773913.455872,VS0,VE0',
+424 silly get     vary: 'Accept-Encoding' } ]
+425 verbose etag https://registry.npmjs.org/jsonfile from cache
+426 verbose get saving jsonfile to /home/luka/.npm/registry.npmjs.org/jsonfile/.cache.json
+427 http 304 https://registry.npmjs.org/graceful-fs
+428 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+428 verbose headers   via: '1.1 varnish',
+428 verbose headers   'cache-control': 'max-age=300',
+428 verbose headers   etag: '"FMU06AXM5Y6LFTITKOQ596SN"',
+428 verbose headers   age: '26',
+428 verbose headers   connection: 'keep-alive',
+428 verbose headers   'x-served-by': 'cache-ams4143-AMS',
+428 verbose headers   'x-cache': 'HIT',
+428 verbose headers   'x-cache-hits': '2',
+428 verbose headers   'x-timer': 'S1465773913.455513,VS0,VE0',
+428 verbose headers   vary: 'Accept-Encoding' }
+429 silly get cb [ 304,
+429 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+429 silly get     via: '1.1 varnish',
+429 silly get     'cache-control': 'max-age=300',
+429 silly get     etag: '"FMU06AXM5Y6LFTITKOQ596SN"',
+429 silly get     age: '26',
+429 silly get     connection: 'keep-alive',
+429 silly get     'x-served-by': 'cache-ams4143-AMS',
+429 silly get     'x-cache': 'HIT',
+429 silly get     'x-cache-hits': '2',
+429 silly get     'x-timer': 'S1465773913.455513,VS0,VE0',
+429 silly get     vary: 'Accept-Encoding' } ]
+430 verbose etag https://registry.npmjs.org/graceful-fs from cache
+431 verbose get saving graceful-fs to /home/luka/.npm/registry.npmjs.org/graceful-fs/.cache.json
+432 http 200 https://registry.npmjs.org/path-is-absolute
+433 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+433 verbose headers   etag: '"A53Z1M2IP6NEL5FBQFT8KJ8FJ"',
+433 verbose headers   'content-type': 'application/json',
+433 verbose headers   'content-encoding': 'gzip',
+433 verbose headers   'cache-control': 'max-age=300',
+433 verbose headers   'content-length': '1152',
+433 verbose headers   'accept-ranges': 'bytes',
+433 verbose headers   date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+433 verbose headers   via: '1.1 varnish',
+433 verbose headers   age: '248',
+433 verbose headers   connection: 'keep-alive',
+433 verbose headers   'x-served-by': 'cache-ams4124-AMS',
+433 verbose headers   'x-cache': 'HIT',
+433 verbose headers   'x-cache-hits': '32',
+433 verbose headers   'x-timer': 'S1465773913.456554,VS0,VE0',
+433 verbose headers   vary: 'Accept-Encoding' }
+434 silly get cb [ 200,
+434 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+434 silly get     etag: '"A53Z1M2IP6NEL5FBQFT8KJ8FJ"',
+434 silly get     'content-type': 'application/json',
+434 silly get     'content-encoding': 'gzip',
+434 silly get     'cache-control': 'max-age=300',
+434 silly get     'content-length': '1152',
+434 silly get     'accept-ranges': 'bytes',
+434 silly get     date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+434 silly get     via: '1.1 varnish',
+434 silly get     age: '248',
+434 silly get     connection: 'keep-alive',
+434 silly get     'x-served-by': 'cache-ams4124-AMS',
+434 silly get     'x-cache': 'HIT',
+434 silly get     'x-cache-hits': '32',
+434 silly get     'x-timer': 'S1465773913.456554,VS0,VE0',
+434 silly get     vary: 'Accept-Encoding' } ]
+435 verbose get saving path-is-absolute to /home/luka/.npm/registry.npmjs.org/path-is-absolute/.cache.json
+436 silly resolveWithNewModule klaw@1.3.0 checking installable status
+437 silly cache add args [ 'klaw@^1.0.0', null ]
+438 verbose cache add spec klaw@^1.0.0
+439 silly cache add parsed spec Result {
+439 silly cache add   raw: 'klaw@^1.0.0',
+439 silly cache add   scope: null,
+439 silly cache add   name: 'klaw',
+439 silly cache add   rawSpec: '^1.0.0',
+439 silly cache add   spec: '>=1.0.0 <2.0.0',
+439 silly cache add   type: 'range' }
+440 silly addNamed klaw@>=1.0.0 <2.0.0
+441 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for klaw
+442 silly addNameRange { name: 'klaw', range: '>=1.0.0 <2.0.0', hasData: false }
+443 silly mapToRegistry name klaw
+444 silly mapToRegistry using default registry
+445 silly mapToRegistry registry https://registry.npmjs.org/
+446 silly mapToRegistry uri https://registry.npmjs.org/klaw
+447 verbose addNameRange registry:https://registry.npmjs.org/klaw not in flight; fetching
+448 silly resolveWithNewModule jsonfile@2.3.1 checking installable status
+449 silly cache add args [ 'jsonfile@^2.1.0', null ]
+450 verbose cache add spec jsonfile@^2.1.0
+451 silly cache add parsed spec Result {
+451 silly cache add   raw: 'jsonfile@^2.1.0',
+451 silly cache add   scope: null,
+451 silly cache add   name: 'jsonfile',
+451 silly cache add   rawSpec: '^2.1.0',
+451 silly cache add   spec: '>=2.1.0 <3.0.0',
+451 silly cache add   type: 'range' }
+452 silly addNamed jsonfile@>=2.1.0 <3.0.0
+453 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for jsonfile
+454 silly addNameRange { name: 'jsonfile', range: '>=2.1.0 <3.0.0', hasData: false }
+455 silly mapToRegistry name jsonfile
+456 silly mapToRegistry using default registry
+457 silly mapToRegistry registry https://registry.npmjs.org/
+458 silly mapToRegistry uri https://registry.npmjs.org/jsonfile
+459 verbose addNameRange registry:https://registry.npmjs.org/jsonfile not in flight; fetching
+460 silly resolveWithNewModule graceful-fs@4.1.4 checking installable status
+461 silly cache add args [ 'graceful-fs@^4.1.2', null ]
+462 verbose cache add spec graceful-fs@^4.1.2
+463 silly cache add parsed spec Result {
+463 silly cache add   raw: 'graceful-fs@^4.1.2',
+463 silly cache add   scope: null,
+463 silly cache add   name: 'graceful-fs',
+463 silly cache add   rawSpec: '^4.1.2',
+463 silly cache add   spec: '>=4.1.2 <5.0.0',
+463 silly cache add   type: 'range' }
+464 silly addNamed graceful-fs@>=4.1.2 <5.0.0
+465 verbose addNamed ">=4.1.2 <5.0.0" is a valid semver range for graceful-fs
+466 silly addNameRange { name: 'graceful-fs', range: '>=4.1.2 <5.0.0', hasData: false }
+467 silly mapToRegistry name graceful-fs
+468 silly mapToRegistry using default registry
+469 silly mapToRegistry registry https://registry.npmjs.org/
+470 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+471 verbose addNameRange registry:https://registry.npmjs.org/graceful-fs not in flight; fetching
+472 http 200 https://registry.npmjs.org/rimraf
+473 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+473 verbose headers   etag: '"2Y1RNODT4G79T8WMBPR9RSNE5"',
+473 verbose headers   'content-type': 'application/json',
+473 verbose headers   'content-encoding': 'gzip',
+473 verbose headers   'cache-control': 'max-age=300',
+473 verbose headers   'content-length': '8367',
+473 verbose headers   'accept-ranges': 'bytes',
+473 verbose headers   date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+473 verbose headers   via: '1.1 varnish',
+473 verbose headers   age: '238',
+473 verbose headers   connection: 'keep-alive',
+473 verbose headers   'x-served-by': 'cache-ams4120-AMS',
+473 verbose headers   'x-cache': 'HIT',
+473 verbose headers   'x-cache-hits': '10',
+473 verbose headers   'x-timer': 'S1465773913.462978,VS0,VE0',
+473 verbose headers   vary: 'Accept-Encoding' }
+474 silly get cb [ 200,
+474 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+474 silly get     etag: '"2Y1RNODT4G79T8WMBPR9RSNE5"',
+474 silly get     'content-type': 'application/json',
+474 silly get     'content-encoding': 'gzip',
+474 silly get     'cache-control': 'max-age=300',
+474 silly get     'content-length': '8367',
+474 silly get     'accept-ranges': 'bytes',
+474 silly get     date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+474 silly get     via: '1.1 varnish',
+474 silly get     age: '238',
+474 silly get     connection: 'keep-alive',
+474 silly get     'x-served-by': 'cache-ams4120-AMS',
+474 silly get     'x-cache': 'HIT',
+474 silly get     'x-cache-hits': '10',
+474 silly get     'x-timer': 'S1465773913.462978,VS0,VE0',
+474 silly get     vary: 'Accept-Encoding' } ]
+475 verbose get saving rimraf to /home/luka/.npm/registry.npmjs.org/rimraf/.cache.json
+476 silly resolveWithNewModule path-is-absolute@1.0.0 checking installable status
+477 silly cache add args [ 'path-is-absolute@^1.0.0', null ]
+478 verbose cache add spec path-is-absolute@^1.0.0
+479 silly cache add parsed spec Result {
+479 silly cache add   raw: 'path-is-absolute@^1.0.0',
+479 silly cache add   scope: null,
+479 silly cache add   name: 'path-is-absolute',
+479 silly cache add   rawSpec: '^1.0.0',
+479 silly cache add   spec: '>=1.0.0 <2.0.0',
+479 silly cache add   type: 'range' }
+480 silly addNamed path-is-absolute@>=1.0.0 <2.0.0
+481 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for path-is-absolute
+482 silly addNameRange { name: 'path-is-absolute',
+482 silly addNameRange   range: '>=1.0.0 <2.0.0',
+482 silly addNameRange   hasData: false }
+483 silly mapToRegistry name path-is-absolute
+484 silly mapToRegistry using default registry
+485 silly mapToRegistry registry https://registry.npmjs.org/
+486 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+487 verbose addNameRange registry:https://registry.npmjs.org/path-is-absolute not in flight; fetching
+488 verbose get https://registry.npmjs.org/klaw not expired, no request
+489 silly addNameRange number 2 { name: 'klaw', range: '>=1.0.0 <2.0.0', hasData: true }
+490 silly addNameRange versions [ 'klaw',
+490 silly addNameRange   [ '0.1.0',
+490 silly addNameRange     '1.0.0',
+490 silly addNameRange     '1.1.0',
+490 silly addNameRange     '1.1.1',
+490 silly addNameRange     '1.1.2',
+490 silly addNameRange     '1.1.3',
+490 silly addNameRange     '1.2.0',
+490 silly addNameRange     '1.3.0' ] ]
+491 silly addNamed klaw@1.3.0
+492 verbose addNamed "1.3.0" is a plain semver version for klaw
+493 verbose get https://registry.npmjs.org/graceful-fs not expired, no request
+494 silly addNameRange number 2 { name: 'graceful-fs', range: '>=4.1.2 <5.0.0', hasData: true }
+495 silly addNameRange versions [ 'graceful-fs',
+495 silly addNameRange   [ '1.0.0',
+495 silly addNameRange     '1.0.1',
+495 silly addNameRange     '1.0.2',
+495 silly addNameRange     '1.1.0',
+495 silly addNameRange     '1.1.1',
+495 silly addNameRange     '1.1.2',
+495 silly addNameRange     '1.1.3',
+495 silly addNameRange     '1.1.4',
+495 silly addNameRange     '1.1.5',
+495 silly addNameRange     '1.1.6',
+495 silly addNameRange     '1.1.7',
+495 silly addNameRange     '1.1.8',
+495 silly addNameRange     '1.1.9',
+495 silly addNameRange     '1.1.10',
+495 silly addNameRange     '1.1.11',
+495 silly addNameRange     '1.1.12',
+495 silly addNameRange     '1.1.13',
+495 silly addNameRange     '1.1.14',
+495 silly addNameRange     '1.2.0',
+495 silly addNameRange     '1.2.1',
+495 silly addNameRange     '1.2.2',
+495 silly addNameRange     '1.2.3',
+495 silly addNameRange     '2.0.0',
+495 silly addNameRange     '2.0.1',
+495 silly addNameRange     '2.0.2',
+495 silly addNameRange     '2.0.3',
+495 silly addNameRange     '3.0.0',
+495 silly addNameRange     '3.0.1',
+495 silly addNameRange     '3.0.2',
+495 silly addNameRange     '3.0.3',
+495 silly addNameRange     '3.0.4',
+495 silly addNameRange     '3.0.5',
+495 silly addNameRange     '3.0.6',
+495 silly addNameRange     '3.0.7',
+495 silly addNameRange     '3.0.8',
+495 silly addNameRange     '4.1.0',
+495 silly addNameRange     '4.1.1',
+495 silly addNameRange     '4.1.2',
+495 silly addNameRange     '4.1.3',
+495 silly addNameRange     '4.1.4' ] ]
+496 silly addNamed graceful-fs@4.1.4
+497 verbose addNamed "4.1.4" is a plain semver version for graceful-fs
+498 verbose get https://registry.npmjs.org/jsonfile not expired, no request
+499 silly addNameRange number 2 { name: 'jsonfile', range: '>=2.1.0 <3.0.0', hasData: true }
+500 silly addNameRange versions [ 'jsonfile',
+500 silly addNameRange   [ '0.0.1',
+500 silly addNameRange     '1.0.0',
+500 silly addNameRange     '1.0.1',
+500 silly addNameRange     '1.1.0',
+500 silly addNameRange     '1.1.1',
+500 silly addNameRange     '1.2.0',
+500 silly addNameRange     '2.0.0',
+500 silly addNameRange     '2.0.1',
+500 silly addNameRange     '2.1.0',
+500 silly addNameRange     '2.1.1',
+500 silly addNameRange     '2.1.2',
+500 silly addNameRange     '2.2.0',
+500 silly addNameRange     '2.2.1',
+500 silly addNameRange     '2.2.2',
+500 silly addNameRange     '2.2.3',
+500 silly addNameRange     '2.3.0',
+500 silly addNameRange     '2.3.1' ] ]
+501 silly addNamed jsonfile@2.3.1
+502 verbose addNamed "2.3.1" is a plain semver version for jsonfile
+503 verbose get https://registry.npmjs.org/path-is-absolute not expired, no request
+504 silly addNameRange number 2 { name: 'path-is-absolute',
+504 silly addNameRange   range: '>=1.0.0 <2.0.0',
+504 silly addNameRange   hasData: true }
+505 silly addNameRange versions [ 'path-is-absolute', [ '1.0.0' ] ]
+506 silly addNamed path-is-absolute@1.0.0
+507 verbose addNamed "1.0.0" is a plain semver version for path-is-absolute
+508 silly resolveWithNewModule rimraf@2.5.2 checking installable status
+509 silly cache add args [ 'rimraf@^2.2.8', null ]
+510 verbose cache add spec rimraf@^2.2.8
+511 silly cache add parsed spec Result {
+511 silly cache add   raw: 'rimraf@^2.2.8',
+511 silly cache add   scope: null,
+511 silly cache add   name: 'rimraf',
+511 silly cache add   rawSpec: '^2.2.8',
+511 silly cache add   spec: '>=2.2.8 <3.0.0',
+511 silly cache add   type: 'range' }
+512 silly addNamed rimraf@>=2.2.8 <3.0.0
+513 verbose addNamed ">=2.2.8 <3.0.0" is a valid semver range for rimraf
+514 silly addNameRange { name: 'rimraf', range: '>=2.2.8 <3.0.0', hasData: false }
+515 silly mapToRegistry name rimraf
+516 silly mapToRegistry using default registry
+517 silly mapToRegistry registry https://registry.npmjs.org/
+518 silly mapToRegistry uri https://registry.npmjs.org/rimraf
+519 verbose addNameRange registry:https://registry.npmjs.org/rimraf not in flight; fetching
+520 silly cache afterAdd jsonfile@2.3.1
+521 verbose afterAdd /home/luka/.npm/jsonfile/2.3.1/package/package.json not in flight; writing
+522 silly cache afterAdd klaw@1.3.0
+523 verbose afterAdd /home/luka/.npm/klaw/1.3.0/package/package.json not in flight; writing
+524 silly cache afterAdd graceful-fs@4.1.4
+525 verbose afterAdd /home/luka/.npm/graceful-fs/4.1.4/package/package.json not in flight; writing
+526 silly cache afterAdd path-is-absolute@1.0.0
+527 verbose afterAdd /home/luka/.npm/path-is-absolute/1.0.0/package/package.json not in flight; writing
+528 verbose get https://registry.npmjs.org/rimraf not expired, no request
+529 silly addNameRange number 2 { name: 'rimraf', range: '>=2.2.8 <3.0.0', hasData: true }
+530 silly addNameRange versions [ 'rimraf',
+530 silly addNameRange   [ '1.0.0',
+530 silly addNameRange     '1.0.1',
+530 silly addNameRange     '1.0.2',
+530 silly addNameRange     '1.0.4',
+530 silly addNameRange     '1.0.5',
+530 silly addNameRange     '1.0.6',
+530 silly addNameRange     '1.0.7',
+530 silly addNameRange     '1.0.8',
+530 silly addNameRange     '1.0.9',
+530 silly addNameRange     '2.0.0',
+530 silly addNameRange     '2.0.1',
+530 silly addNameRange     '2.0.2',
+530 silly addNameRange     '2.0.3',
+530 silly addNameRange     '2.1.0',
+530 silly addNameRange     '2.1.1',
+530 silly addNameRange     '2.1.2',
+530 silly addNameRange     '2.1.3',
+530 silly addNameRange     '2.1.4',
+530 silly addNameRange     '2.2.0',
+530 silly addNameRange     '2.2.1',
+530 silly addNameRange     '2.2.2',
+530 silly addNameRange     '2.2.3',
+530 silly addNameRange     '2.2.4',
+530 silly addNameRange     '2.2.5',
+530 silly addNameRange     '2.2.6',
+530 silly addNameRange     '2.2.8',
+530 silly addNameRange     '2.3.0',
+530 silly addNameRange     '2.3.1',
+530 silly addNameRange     '2.3.2',
+530 silly addNameRange     '2.3.3',
+530 silly addNameRange     '2.3.4',
+530 silly addNameRange     '2.4.0',
+530 silly addNameRange     '2.4.1',
+530 silly addNameRange     '2.4.2',
+530 silly addNameRange     '2.4.3',
+530 silly addNameRange     '2.4.4',
+530 silly addNameRange     '2.4.5',
+530 silly addNameRange     '2.5.0',
+530 silly addNameRange     '2.5.1',
+530 silly addNameRange     '2.5.2' ] ]
+531 silly addNamed rimraf@2.5.2
+532 verbose addNamed "2.5.2" is a plain semver version for rimraf
+533 verbose afterAdd /home/luka/.npm/jsonfile/2.3.1/package/package.json written
+534 verbose afterAdd /home/luka/.npm/klaw/1.3.0/package/package.json written
+535 verbose afterAdd /home/luka/.npm/graceful-fs/4.1.4/package/package.json written
+536 verbose afterAdd /home/luka/.npm/path-is-absolute/1.0.0/package/package.json written
+537 silly cache afterAdd rimraf@2.5.2
+538 verbose afterAdd /home/luka/.npm/rimraf/2.5.2/package/package.json not in flight; writing
+539 verbose afterAdd /home/luka/.npm/rimraf/2.5.2/package/package.json written
+540 silly fetchNamedPackageData glob
+541 silly mapToRegistry name glob
+542 silly mapToRegistry using default registry
+543 silly mapToRegistry registry https://registry.npmjs.org/
+544 silly mapToRegistry uri https://registry.npmjs.org/glob
+545 verbose request uri https://registry.npmjs.org/glob
+546 verbose request no auth needed
+547 info attempt registry request try #1 at 1:25:13 AM
+548 verbose etag "BWZ68LS76SQ36I53GCT1VVO37"
+549 http request GET https://registry.npmjs.org/glob
+550 http 304 https://registry.npmjs.org/glob
+551 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+551 verbose headers   via: '1.1 varnish',
+551 verbose headers   'cache-control': 'max-age=300',
+551 verbose headers   etag: '"BWZ68LS76SQ36I53GCT1VVO37"',
+551 verbose headers   age: '55',
+551 verbose headers   connection: 'keep-alive',
+551 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+551 verbose headers   'x-cache': 'HIT',
+551 verbose headers   'x-cache-hits': '26',
+551 verbose headers   'x-timer': 'S1465773913.612882,VS0,VE0',
+551 verbose headers   vary: 'Accept-Encoding' }
+552 silly get cb [ 304,
+552 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+552 silly get     via: '1.1 varnish',
+552 silly get     'cache-control': 'max-age=300',
+552 silly get     etag: '"BWZ68LS76SQ36I53GCT1VVO37"',
+552 silly get     age: '55',
+552 silly get     connection: 'keep-alive',
+552 silly get     'x-served-by': 'cache-ams4121-AMS',
+552 silly get     'x-cache': 'HIT',
+552 silly get     'x-cache-hits': '26',
+552 silly get     'x-timer': 'S1465773913.612882,VS0,VE0',
+552 silly get     vary: 'Accept-Encoding' } ]
+553 verbose etag https://registry.npmjs.org/glob from cache
+554 verbose get saving glob to /home/luka/.npm/registry.npmjs.org/glob/.cache.json
+555 silly resolveWithNewModule glob@7.0.3 checking installable status
+556 silly cache add args [ 'glob@^7.0.0', null ]
+557 verbose cache add spec glob@^7.0.0
+558 silly cache add parsed spec Result {
+558 silly cache add   raw: 'glob@^7.0.0',
+558 silly cache add   scope: null,
+558 silly cache add   name: 'glob',
+558 silly cache add   rawSpec: '^7.0.0',
+558 silly cache add   spec: '>=7.0.0 <8.0.0',
+558 silly cache add   type: 'range' }
+559 silly addNamed glob@>=7.0.0 <8.0.0
+560 verbose addNamed ">=7.0.0 <8.0.0" is a valid semver range for glob
+561 silly addNameRange { name: 'glob', range: '>=7.0.0 <8.0.0', hasData: false }
+562 silly mapToRegistry name glob
+563 silly mapToRegistry using default registry
+564 silly mapToRegistry registry https://registry.npmjs.org/
+565 silly mapToRegistry uri https://registry.npmjs.org/glob
+566 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+567 verbose get https://registry.npmjs.org/glob not expired, no request
+568 silly addNameRange number 2 { name: 'glob', range: '>=7.0.0 <8.0.0', hasData: true }
+569 silly addNameRange versions [ 'glob',
+569 silly addNameRange   [ '1.1.0',
+569 silly addNameRange     '2.0.9',
+569 silly addNameRange     '2.0.8',
+569 silly addNameRange     '2.0.7',
+569 silly addNameRange     '2.1.0',
+569 silly addNameRange     '3.0.0',
+569 silly addNameRange     '3.0.1',
+569 silly addNameRange     '3.1.0',
+569 silly addNameRange     '3.1.1',
+569 silly addNameRange     '3.1.2',
+569 silly addNameRange     '3.1.3',
+569 silly addNameRange     '3.1.4',
+569 silly addNameRange     '3.1.5',
+569 silly addNameRange     '3.1.6',
+569 silly addNameRange     '3.1.7',
+569 silly addNameRange     '3.1.9',
+569 silly addNameRange     '3.1.10',
+569 silly addNameRange     '3.1.11',
+569 silly addNameRange     '3.1.12',
+569 silly addNameRange     '3.1.13',
+569 silly addNameRange     '3.1.14',
+569 silly addNameRange     '3.1.15',
+569 silly addNameRange     '3.1.16',
+569 silly addNameRange     '3.1.17',
+569 silly addNameRange     '3.1.18',
+569 silly addNameRange     '3.1.19',
+569 silly addNameRange     '3.1.20',
+569 silly addNameRange     '3.1.21',
+569 silly addNameRange     '3.2.0',
+569 silly addNameRange     '3.2.1',
+569 silly addNameRange     '3.2.3',
+569 silly addNameRange     '3.2.4',
+569 silly addNameRange     '3.2.5',
+569 silly addNameRange     '3.2.6',
+569 silly addNameRange     '3.2.7',
+569 silly addNameRange     '3.2.8',
+569 silly addNameRange     '3.2.9',
+569 silly addNameRange     '3.2.10',
+569 silly addNameRange     '3.2.11',
+569 silly addNameRange     '4.0.0',
+569 silly addNameRange     '4.0.1',
+569 silly addNameRange     '4.0.2',
+569 silly addNameRange     '4.0.3',
+569 silly addNameRange     '4.0.4',
+569 silly addNameRange     '4.0.5',
+569 silly addNameRange     '4.0.6',
+569 silly addNameRange     '4.1.2-beta',
+569 silly addNameRange     '4.1.2',
+569 silly addNameRange     '4.1.3',
+569 silly addNameRange     '4.1.4',
+569 silly addNameRange     '4.1.5',
+569 silly addNameRange     '4.1.6',
+569 silly addNameRange     '4.2.0',
+569 silly addNameRange     '4.2.1',
+569 silly addNameRange     '4.2.2',
+569 silly addNameRange     '4.3.0',
+569 silly addNameRange     '4.3.1',
+569 silly addNameRange     '4.3.2',
+569 silly addNameRange     '4.3.3',
+569 silly addNameRange     '4.3.4',
+569 silly addNameRange     '4.3.5',
+569 silly addNameRange     '4.4.0',
+569 silly addNameRange     '4.4.2',
+569 silly addNameRange     '4.5.0',
+569 silly addNameRange     '5.0.0',
+569 silly addNameRange     '4.5.1',
+569 silly addNameRange     '5.0.1',
+569 silly addNameRange     '4.5.2',
+569 silly addNameRange     '5.0.2',
+569 silly addNameRange     '4.5.3',
+569 silly addNameRange     '5.0.3',
+569 silly addNameRange     '5.0.4',
+569 silly addNameRange     '5.0.5',
+569 silly addNameRange     '5.0.6',
+569 silly addNameRange     '5.0.7',
+569 silly addNameRange     '5.0.9',
+569 silly addNameRange     '5.0.10',
+569 silly addNameRange     '5.0.11',
+569 silly addNameRange     '5.0.12',
+569 silly addNameRange     '5.0.13',
+569 silly addNameRange     '5.0.14',
+569 silly addNameRange     '5.0.15',
+569 silly addNameRange     '6.0.1',
+569 silly addNameRange     '6.0.2',
+569 silly addNameRange     '6.0.3',
+569 silly addNameRange     '6.0.4',
+569 silly addNameRange     '7.0.0',
+569 silly addNameRange     '7.0.1',
+569 silly addNameRange     '7.0.3' ] ]
+570 silly addNamed glob@7.0.3
+571 verbose addNamed "7.0.3" is a plain semver version for glob
+572 silly cache afterAdd glob@7.0.3
+573 verbose afterAdd /home/luka/.npm/glob/7.0.3/package/package.json not in flight; writing
+574 verbose afterAdd /home/luka/.npm/glob/7.0.3/package/package.json written
+575 silly fetchNamedPackageData inflight
+576 silly mapToRegistry name inflight
+577 silly mapToRegistry using default registry
+578 silly mapToRegistry registry https://registry.npmjs.org/
+579 silly mapToRegistry uri https://registry.npmjs.org/inflight
+580 silly fetchNamedPackageData inherits
+581 silly mapToRegistry name inherits
+582 silly mapToRegistry using default registry
+583 silly mapToRegistry registry https://registry.npmjs.org/
+584 silly mapToRegistry uri https://registry.npmjs.org/inherits
+585 silly fetchNamedPackageData once
+586 silly mapToRegistry name once
+587 silly mapToRegistry using default registry
+588 silly mapToRegistry registry https://registry.npmjs.org/
+589 silly mapToRegistry uri https://registry.npmjs.org/once
+590 verbose request uri https://registry.npmjs.org/inherits
+591 verbose request no auth needed
+592 info attempt registry request try #1 at 1:25:13 AM
+593 verbose etag "9C23BNETE30UZVYRVML0QUTBX"
+594 http request GET https://registry.npmjs.org/inherits
+595 verbose request uri https://registry.npmjs.org/inflight
+596 verbose request no auth needed
+597 info attempt registry request try #1 at 1:25:13 AM
+598 verbose etag "8L27FU8RFIFX9CQWNUXL1ABUM"
+599 http request GET https://registry.npmjs.org/inflight
+600 verbose request uri https://registry.npmjs.org/once
+601 verbose request no auth needed
+602 info attempt registry request try #1 at 1:25:13 AM
+603 verbose etag "19BC5SB4QCK4KR5ZAJCMUBZ3M"
+604 http request GET https://registry.npmjs.org/once
+605 http 304 https://registry.npmjs.org/inflight
+606 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+606 verbose headers   via: '1.1 varnish',
+606 verbose headers   'cache-control': 'max-age=300',
+606 verbose headers   etag: '"8L27FU8RFIFX9CQWNUXL1ABUM"',
+606 verbose headers   age: '181',
+606 verbose headers   connection: 'keep-alive',
+606 verbose headers   'x-served-by': 'cache-ams4136-AMS',
+606 verbose headers   'x-cache': 'HIT',
+606 verbose headers   'x-cache-hits': '4',
+606 verbose headers   'x-timer': 'S1465773913.750169,VS0,VE0',
+606 verbose headers   vary: 'Accept-Encoding' }
+607 silly get cb [ 304,
+607 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+607 silly get     via: '1.1 varnish',
+607 silly get     'cache-control': 'max-age=300',
+607 silly get     etag: '"8L27FU8RFIFX9CQWNUXL1ABUM"',
+607 silly get     age: '181',
+607 silly get     connection: 'keep-alive',
+607 silly get     'x-served-by': 'cache-ams4136-AMS',
+607 silly get     'x-cache': 'HIT',
+607 silly get     'x-cache-hits': '4',
+607 silly get     'x-timer': 'S1465773913.750169,VS0,VE0',
+607 silly get     vary: 'Accept-Encoding' } ]
+608 verbose etag https://registry.npmjs.org/inflight from cache
+609 verbose get saving inflight to /home/luka/.npm/registry.npmjs.org/inflight/.cache.json
+610 http 304 https://registry.npmjs.org/once
+611 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+611 verbose headers   via: '1.1 varnish',
+611 verbose headers   'cache-control': 'max-age=300',
+611 verbose headers   etag: '"19BC5SB4QCK4KR5ZAJCMUBZ3M"',
+611 verbose headers   age: '254',
+611 verbose headers   connection: 'keep-alive',
+611 verbose headers   'x-served-by': 'cache-ams4144-AMS',
+611 verbose headers   'x-cache': 'HIT',
+611 verbose headers   'x-cache-hits': '7',
+611 verbose headers   'x-timer': 'S1465773913.750422,VS0,VE0',
+611 verbose headers   vary: 'Accept-Encoding' }
+612 silly get cb [ 304,
+612 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+612 silly get     via: '1.1 varnish',
+612 silly get     'cache-control': 'max-age=300',
+612 silly get     etag: '"19BC5SB4QCK4KR5ZAJCMUBZ3M"',
+612 silly get     age: '254',
+612 silly get     connection: 'keep-alive',
+612 silly get     'x-served-by': 'cache-ams4144-AMS',
+612 silly get     'x-cache': 'HIT',
+612 silly get     'x-cache-hits': '7',
+612 silly get     'x-timer': 'S1465773913.750422,VS0,VE0',
+612 silly get     vary: 'Accept-Encoding' } ]
+613 verbose etag https://registry.npmjs.org/once from cache
+614 verbose get saving once to /home/luka/.npm/registry.npmjs.org/once/.cache.json
+615 http 304 https://registry.npmjs.org/inherits
+616 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+616 verbose headers   via: '1.1 varnish',
+616 verbose headers   'cache-control': 'max-age=300',
+616 verbose headers   etag: '"9C23BNETE30UZVYRVML0QUTBX"',
+616 verbose headers   age: '52',
+616 verbose headers   connection: 'keep-alive',
+616 verbose headers   'x-served-by': 'cache-ams4131-AMS',
+616 verbose headers   'x-cache': 'HIT',
+616 verbose headers   'x-cache-hits': '1',
+616 verbose headers   'x-timer': 'S1465773913.752586,VS0,VE0',
+616 verbose headers   vary: 'Accept-Encoding' }
+617 silly get cb [ 304,
+617 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+617 silly get     via: '1.1 varnish',
+617 silly get     'cache-control': 'max-age=300',
+617 silly get     etag: '"9C23BNETE30UZVYRVML0QUTBX"',
+617 silly get     age: '52',
+617 silly get     connection: 'keep-alive',
+617 silly get     'x-served-by': 'cache-ams4131-AMS',
+617 silly get     'x-cache': 'HIT',
+617 silly get     'x-cache-hits': '1',
+617 silly get     'x-timer': 'S1465773913.752586,VS0,VE0',
+617 silly get     vary: 'Accept-Encoding' } ]
+618 verbose etag https://registry.npmjs.org/inherits from cache
+619 verbose get saving inherits to /home/luka/.npm/registry.npmjs.org/inherits/.cache.json
+620 silly resolveWithNewModule inflight@1.0.5 checking installable status
+621 silly cache add args [ 'inflight@^1.0.4', null ]
+622 verbose cache add spec inflight@^1.0.4
+623 silly cache add parsed spec Result {
+623 silly cache add   raw: 'inflight@^1.0.4',
+623 silly cache add   scope: null,
+623 silly cache add   name: 'inflight',
+623 silly cache add   rawSpec: '^1.0.4',
+623 silly cache add   spec: '>=1.0.4 <2.0.0',
+623 silly cache add   type: 'range' }
+624 silly addNamed inflight@>=1.0.4 <2.0.0
+625 verbose addNamed ">=1.0.4 <2.0.0" is a valid semver range for inflight
+626 silly addNameRange { name: 'inflight', range: '>=1.0.4 <2.0.0', hasData: false }
+627 silly mapToRegistry name inflight
+628 silly mapToRegistry using default registry
+629 silly mapToRegistry registry https://registry.npmjs.org/
+630 silly mapToRegistry uri https://registry.npmjs.org/inflight
+631 verbose addNameRange registry:https://registry.npmjs.org/inflight not in flight; fetching
+632 silly resolveWithNewModule once@1.3.3 checking installable status
+633 silly cache add args [ 'once@^1.3.0', null ]
+634 verbose cache add spec once@^1.3.0
+635 silly cache add parsed spec Result {
+635 silly cache add   raw: 'once@^1.3.0',
+635 silly cache add   scope: null,
+635 silly cache add   name: 'once',
+635 silly cache add   rawSpec: '^1.3.0',
+635 silly cache add   spec: '>=1.3.0 <2.0.0',
+635 silly cache add   type: 'range' }
+636 silly addNamed once@>=1.3.0 <2.0.0
+637 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for once
+638 silly addNameRange { name: 'once', range: '>=1.3.0 <2.0.0', hasData: false }
+639 silly mapToRegistry name once
+640 silly mapToRegistry using default registry
+641 silly mapToRegistry registry https://registry.npmjs.org/
+642 silly mapToRegistry uri https://registry.npmjs.org/once
+643 verbose addNameRange registry:https://registry.npmjs.org/once not in flight; fetching
+644 silly resolveWithNewModule inherits@2.0.1 checking installable status
+645 silly cache add args [ 'inherits@2', null ]
+646 verbose cache add spec inherits@2
+647 silly cache add parsed spec Result {
+647 silly cache add   raw: 'inherits@2',
+647 silly cache add   scope: null,
+647 silly cache add   name: 'inherits',
+647 silly cache add   rawSpec: '2',
+647 silly cache add   spec: '>=2.0.0 <3.0.0',
+647 silly cache add   type: 'range' }
+648 silly addNamed inherits@>=2.0.0 <3.0.0
+649 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for inherits
+650 silly addNameRange { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: false }
+651 silly mapToRegistry name inherits
+652 silly mapToRegistry using default registry
+653 silly mapToRegistry registry https://registry.npmjs.org/
+654 silly mapToRegistry uri https://registry.npmjs.org/inherits
+655 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+656 verbose get https://registry.npmjs.org/inflight not expired, no request
+657 silly addNameRange number 2 { name: 'inflight', range: '>=1.0.4 <2.0.0', hasData: true }
+658 silly addNameRange versions [ 'inflight',
+658 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+659 silly addNamed inflight@1.0.5
+660 verbose addNamed "1.0.5" is a plain semver version for inflight
+661 verbose get https://registry.npmjs.org/once not expired, no request
+662 silly addNameRange number 2 { name: 'once', range: '>=1.3.0 <2.0.0', hasData: true }
+663 silly addNameRange versions [ 'once',
+663 silly addNameRange   [ '1.1.1', '1.2.0', '1.3.0', '1.3.1', '1.3.2', '1.3.3' ] ]
+664 silly addNamed once@1.3.3
+665 verbose addNamed "1.3.3" is a plain semver version for once
+666 verbose get https://registry.npmjs.org/inherits not expired, no request
+667 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: true }
+668 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+669 silly addNamed inherits@2.0.1
+670 verbose addNamed "2.0.1" is a plain semver version for inherits
+671 silly cache afterAdd inflight@1.0.5
+672 verbose afterAdd /home/luka/.npm/inflight/1.0.5/package/package.json not in flight; writing
+673 silly cache afterAdd once@1.3.3
+674 verbose afterAdd /home/luka/.npm/once/1.3.3/package/package.json not in flight; writing
+675 silly cache afterAdd inherits@2.0.1
+676 verbose afterAdd /home/luka/.npm/inherits/2.0.1/package/package.json not in flight; writing
+677 verbose afterAdd /home/luka/.npm/inflight/1.0.5/package/package.json written
+678 verbose afterAdd /home/luka/.npm/once/1.3.3/package/package.json written
+679 verbose afterAdd /home/luka/.npm/inherits/2.0.1/package/package.json written
+680 silly fetchNamedPackageData wrappy
+681 silly mapToRegistry name wrappy
+682 silly mapToRegistry using default registry
+683 silly mapToRegistry registry https://registry.npmjs.org/
+684 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+685 verbose request uri https://registry.npmjs.org/wrappy
+686 verbose request no auth needed
+687 info attempt registry request try #1 at 1:25:13 AM
+688 verbose etag "4YHCBF4EFQV6QOW21NQ6F7ATC"
+689 http request GET https://registry.npmjs.org/wrappy
+690 http 304 https://registry.npmjs.org/wrappy
+691 verbose headers { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+691 verbose headers   via: '1.1 varnish',
+691 verbose headers   'cache-control': 'max-age=300',
+691 verbose headers   etag: '"4YHCBF4EFQV6QOW21NQ6F7ATC"',
+691 verbose headers   age: '252',
+691 verbose headers   connection: 'keep-alive',
+691 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+691 verbose headers   'x-cache': 'HIT',
+691 verbose headers   'x-cache-hits': '5',
+691 verbose headers   'x-timer': 'S1465773913.882064,VS0,VE0',
+691 verbose headers   vary: 'Accept-Encoding' }
+692 silly get cb [ 304,
+692 silly get   { date: 'Sun, 12 Jun 2016 23:25:13 GMT',
+692 silly get     via: '1.1 varnish',
+692 silly get     'cache-control': 'max-age=300',
+692 silly get     etag: '"4YHCBF4EFQV6QOW21NQ6F7ATC"',
+692 silly get     age: '252',
+692 silly get     connection: 'keep-alive',
+692 silly get     'x-served-by': 'cache-ams4134-AMS',
+692 silly get     'x-cache': 'HIT',
+692 silly get     'x-cache-hits': '5',
+692 silly get     'x-timer': 'S1465773913.882064,VS0,VE0',
+692 silly get     vary: 'Accept-Encoding' } ]
+693 verbose etag https://registry.npmjs.org/wrappy from cache
+694 verbose get saving wrappy to /home/luka/.npm/registry.npmjs.org/wrappy/.cache.json
+695 silly resolveWithNewModule wrappy@1.0.2 checking installable status
+696 silly cache add args [ 'wrappy@1', null ]
+697 verbose cache add spec wrappy@1
+698 silly cache add parsed spec Result {
+698 silly cache add   raw: 'wrappy@1',
+698 silly cache add   scope: null,
+698 silly cache add   name: 'wrappy',
+698 silly cache add   rawSpec: '1',
+698 silly cache add   spec: '>=1.0.0 <2.0.0',
+698 silly cache add   type: 'range' }
+699 silly addNamed wrappy@>=1.0.0 <2.0.0
+700 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for wrappy
+701 silly addNameRange { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: false }
+702 silly mapToRegistry name wrappy
+703 silly mapToRegistry using default registry
+704 silly mapToRegistry registry https://registry.npmjs.org/
+705 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+706 verbose addNameRange registry:https://registry.npmjs.org/wrappy not in flight; fetching
+707 verbose get https://registry.npmjs.org/wrappy not expired, no request
+708 silly addNameRange number 2 { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: true }
+709 silly addNameRange versions [ 'wrappy', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+710 silly addNamed wrappy@1.0.2
+711 verbose addNamed "1.0.2" is a plain semver version for wrappy
+712 silly cache afterAdd wrappy@1.0.2
+713 verbose afterAdd /home/luka/.npm/wrappy/1.0.2/package/package.json not in flight; writing
+714 verbose afterAdd /home/luka/.npm/wrappy/1.0.2/package/package.json written
+715 silly fetchNamedPackageData brace-expansion
+716 silly mapToRegistry name brace-expansion
+717 silly mapToRegistry using default registry
+718 silly mapToRegistry registry https://registry.npmjs.org/
+719 silly mapToRegistry uri https://registry.npmjs.org/brace-expansion
+720 verbose request uri https://registry.npmjs.org/brace-expansion
+721 verbose request no auth needed
+722 info attempt registry request try #1 at 1:25:13 AM
+723 verbose etag "F22AVJEDKFN6WYZJP0YTDTUOQ"
+724 http request GET https://registry.npmjs.org/brace-expansion
+725 http 200 https://registry.npmjs.org/brace-expansion
+726 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+726 verbose headers   etag: '"BRB80Z5BKKD0T273HAAAVRUX8"',
+726 verbose headers   'content-type': 'application/json',
+726 verbose headers   'content-encoding': 'gzip',
+726 verbose headers   'cache-control': 'max-age=300',
+726 verbose headers   'content-length': '3726',
+726 verbose headers   'accept-ranges': 'bytes',
+726 verbose headers   date: 'Sun, 12 Jun 2016 23:25:14 GMT',
+726 verbose headers   via: '1.1 varnish',
+726 verbose headers   age: '249',
+726 verbose headers   connection: 'keep-alive',
+726 verbose headers   'x-served-by': 'cache-ams4148-AMS',
+726 verbose headers   'x-cache': 'HIT',
+726 verbose headers   'x-cache-hits': '3',
+726 verbose headers   'x-timer': 'S1465773914.005435,VS0,VE0',
+726 verbose headers   vary: 'Accept-Encoding' }
+727 silly get cb [ 200,
+727 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+727 silly get     etag: '"BRB80Z5BKKD0T273HAAAVRUX8"',
+727 silly get     'content-type': 'application/json',
+727 silly get     'content-encoding': 'gzip',
+727 silly get     'cache-control': 'max-age=300',
+727 silly get     'content-length': '3726',
+727 silly get     'accept-ranges': 'bytes',
+727 silly get     date: 'Sun, 12 Jun 2016 23:25:14 GMT',
+727 silly get     via: '1.1 varnish',
+727 silly get     age: '249',
+727 silly get     connection: 'keep-alive',
+727 silly get     'x-served-by': 'cache-ams4148-AMS',
+727 silly get     'x-cache': 'HIT',
+727 silly get     'x-cache-hits': '3',
+727 silly get     'x-timer': 'S1465773914.005435,VS0,VE0',
+727 silly get     vary: 'Accept-Encoding' } ]
+728 verbose get saving brace-expansion to /home/luka/.npm/registry.npmjs.org/brace-expansion/.cache.json
+729 silly resolveWithNewModule brace-expansion@1.1.4 checking installable status
+730 silly cache add args [ 'brace-expansion@^1.0.0', null ]
+731 verbose cache add spec brace-expansion@^1.0.0
+732 silly cache add parsed spec Result {
+732 silly cache add   raw: 'brace-expansion@^1.0.0',
+732 silly cache add   scope: null,
+732 silly cache add   name: 'brace-expansion',
+732 silly cache add   rawSpec: '^1.0.0',
+732 silly cache add   spec: '>=1.0.0 <2.0.0',
+732 silly cache add   type: 'range' }
+733 silly addNamed brace-expansion@>=1.0.0 <2.0.0
+734 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for brace-expansion
+735 silly addNameRange { name: 'brace-expansion',
+735 silly addNameRange   range: '>=1.0.0 <2.0.0',
+735 silly addNameRange   hasData: false }
+736 silly mapToRegistry name brace-expansion
+737 silly mapToRegistry using default registry
+738 silly mapToRegistry registry https://registry.npmjs.org/
+739 silly mapToRegistry uri https://registry.npmjs.org/brace-expansion
+740 verbose addNameRange registry:https://registry.npmjs.org/brace-expansion not in flight; fetching
+741 verbose get https://registry.npmjs.org/brace-expansion not expired, no request
+742 silly addNameRange number 2 { name: 'brace-expansion',
+742 silly addNameRange   range: '>=1.0.0 <2.0.0',
+742 silly addNameRange   hasData: true }
+743 silly addNameRange versions [ 'brace-expansion',
+743 silly addNameRange   [ '0.0.0',
+743 silly addNameRange     '1.0.0',
+743 silly addNameRange     '1.0.1',
+743 silly addNameRange     '1.1.0',
+743 silly addNameRange     '1.1.1',
+743 silly addNameRange     '1.1.2',
+743 silly addNameRange     '1.1.3',
+743 silly addNameRange     '1.1.4' ] ]
+744 silly addNamed brace-expansion@1.1.4
+745 verbose addNamed "1.1.4" is a plain semver version for brace-expansion
+746 silly cache afterAdd brace-expansion@1.1.4
+747 verbose afterAdd /home/luka/.npm/brace-expansion/1.1.4/package/package.json not in flight; writing
+748 verbose afterAdd /home/luka/.npm/brace-expansion/1.1.4/package/package.json written
+749 silly fetchNamedPackageData balanced-match
+750 silly mapToRegistry name balanced-match
+751 silly mapToRegistry using default registry
+752 silly mapToRegistry registry https://registry.npmjs.org/
+753 silly mapToRegistry uri https://registry.npmjs.org/balanced-match
+754 silly fetchNamedPackageData concat-map
+755 silly mapToRegistry name concat-map
+756 silly mapToRegistry using default registry
+757 silly mapToRegistry registry https://registry.npmjs.org/
+758 silly mapToRegistry uri https://registry.npmjs.org/concat-map
+759 verbose request uri https://registry.npmjs.org/balanced-match
+760 verbose request no auth needed
+761 info attempt registry request try #1 at 1:25:14 AM
+762 verbose etag "UFN8HWPFCH7RDC14XWMW6XB6"
+763 http request GET https://registry.npmjs.org/balanced-match
+764 verbose request uri https://registry.npmjs.org/concat-map
+765 verbose request no auth needed
+766 info attempt registry request try #1 at 1:25:14 AM
+767 verbose etag "66LI2B4AH1989LYDFSL4P944A"
+768 http request GET https://registry.npmjs.org/concat-map
+769 http 304 https://registry.npmjs.org/balanced-match
+770 verbose headers { date: 'Sun, 12 Jun 2016 23:25:14 GMT',
+770 verbose headers   via: '1.1 varnish',
+770 verbose headers   'cache-control': 'max-age=300',
+770 verbose headers   etag: '"UFN8HWPFCH7RDC14XWMW6XB6"',
+770 verbose headers   age: '220',
+770 verbose headers   connection: 'keep-alive',
+770 verbose headers   'x-served-by': 'cache-ams4140-AMS',
+770 verbose headers   'x-cache': 'HIT',
+770 verbose headers   'x-cache-hits': '7',
+770 verbose headers   'x-timer': 'S1465773914.131972,VS0,VE0',
+770 verbose headers   vary: 'Accept-Encoding' }
+771 silly get cb [ 304,
+771 silly get   { date: 'Sun, 12 Jun 2016 23:25:14 GMT',
+771 silly get     via: '1.1 varnish',
+771 silly get     'cache-control': 'max-age=300',
+771 silly get     etag: '"UFN8HWPFCH7RDC14XWMW6XB6"',
+771 silly get     age: '220',
+771 silly get     connection: 'keep-alive',
+771 silly get     'x-served-by': 'cache-ams4140-AMS',
+771 silly get     'x-cache': 'HIT',
+771 silly get     'x-cache-hits': '7',
+771 silly get     'x-timer': 'S1465773914.131972,VS0,VE0',
+771 silly get     vary: 'Accept-Encoding' } ]
+772 verbose etag https://registry.npmjs.org/balanced-match from cache
+773 verbose get saving balanced-match to /home/luka/.npm/registry.npmjs.org/balanced-match/.cache.json
+774 silly resolveWithNewModule balanced-match@0.4.1 checking installable status
+775 silly cache add args [ 'balanced-match@^0.4.1', null ]
+776 verbose cache add spec balanced-match@^0.4.1
+777 silly cache add parsed spec Result {
+777 silly cache add   raw: 'balanced-match@^0.4.1',
+777 silly cache add   scope: null,
+777 silly cache add   name: 'balanced-match',
+777 silly cache add   rawSpec: '^0.4.1',
+777 silly cache add   spec: '>=0.4.1 <0.5.0',
+777 silly cache add   type: 'range' }
+778 silly addNamed balanced-match@>=0.4.1 <0.5.0
+779 verbose addNamed ">=0.4.1 <0.5.0" is a valid semver range for balanced-match
+780 silly addNameRange { name: 'balanced-match',
+780 silly addNameRange   range: '>=0.4.1 <0.5.0',
+780 silly addNameRange   hasData: false }
+781 silly mapToRegistry name balanced-match
+782 silly mapToRegistry using default registry
+783 silly mapToRegistry registry https://registry.npmjs.org/
+784 silly mapToRegistry uri https://registry.npmjs.org/balanced-match
+785 verbose addNameRange registry:https://registry.npmjs.org/balanced-match not in flight; fetching
+786 verbose get https://registry.npmjs.org/balanced-match not expired, no request
+787 silly addNameRange number 2 { name: 'balanced-match',
+787 silly addNameRange   range: '>=0.4.1 <0.5.0',
+787 silly addNameRange   hasData: true }
+788 silly addNameRange versions [ 'balanced-match',
+788 silly addNameRange   [ '0.0.0',
+788 silly addNameRange     '0.0.1',
+788 silly addNameRange     '0.1.0',
+788 silly addNameRange     '0.2.0',
+788 silly addNameRange     '0.2.1',
+788 silly addNameRange     '0.3.0',
+788 silly addNameRange     '0.4.0',
+788 silly addNameRange     '0.4.1' ] ]
+789 silly addNamed balanced-match@0.4.1
+790 verbose addNamed "0.4.1" is a plain semver version for balanced-match
+791 silly cache afterAdd balanced-match@0.4.1
+792 verbose afterAdd /home/luka/.npm/balanced-match/0.4.1/package/package.json not in flight; writing
+793 http 200 https://registry.npmjs.org/concat-map
+794 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+794 verbose headers   etag: '"7YMM5DAB2C8LFOYGIFD54ADEV"',
+794 verbose headers   'content-type': 'application/json',
+794 verbose headers   'content-encoding': 'gzip',
+794 verbose headers   'cache-control': 'max-age=300',
+794 verbose headers   'content-length': '1479',
+794 verbose headers   'accept-ranges': 'bytes',
+794 verbose headers   date: 'Sun, 12 Jun 2016 23:25:14 GMT',
+794 verbose headers   via: '1.1 varnish',
+794 verbose headers   age: '273',
+794 verbose headers   connection: 'keep-alive',
+794 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+794 verbose headers   'x-cache': 'HIT',
+794 verbose headers   'x-cache-hits': '5',
+794 verbose headers   'x-timer': 'S1465773914.135546,VS0,VE0',
+794 verbose headers   vary: 'Accept-Encoding' }
+795 silly get cb [ 200,
+795 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+795 silly get     etag: '"7YMM5DAB2C8LFOYGIFD54ADEV"',
+795 silly get     'content-type': 'application/json',
+795 silly get     'content-encoding': 'gzip',
+795 silly get     'cache-control': 'max-age=300',
+795 silly get     'content-length': '1479',
+795 silly get     'accept-ranges': 'bytes',
+795 silly get     date: 'Sun, 12 Jun 2016 23:25:14 GMT',
+795 silly get     via: '1.1 varnish',
+795 silly get     age: '273',
+795 silly get     connection: 'keep-alive',
+795 silly get     'x-served-by': 'cache-ams4132-AMS',
+795 silly get     'x-cache': 'HIT',
+795 silly get     'x-cache-hits': '5',
+795 silly get     'x-timer': 'S1465773914.135546,VS0,VE0',
+795 silly get     vary: 'Accept-Encoding' } ]
+796 verbose get saving concat-map to /home/luka/.npm/registry.npmjs.org/concat-map/.cache.json
+797 verbose afterAdd /home/luka/.npm/balanced-match/0.4.1/package/package.json written
+798 silly resolveWithNewModule concat-map@0.0.1 checking installable status
+799 silly cache add args [ 'concat-map@0.0.1', null ]
+800 verbose cache add spec concat-map@0.0.1
+801 silly cache add parsed spec Result {
+801 silly cache add   raw: 'concat-map@0.0.1',
+801 silly cache add   scope: null,
+801 silly cache add   name: 'concat-map',
+801 silly cache add   rawSpec: '0.0.1',
+801 silly cache add   spec: '0.0.1',
+801 silly cache add   type: 'version' }
+802 silly addNamed concat-map@0.0.1
+803 verbose addNamed "0.0.1" is a plain semver version for concat-map
+804 silly mapToRegistry name concat-map
+805 silly mapToRegistry using default registry
+806 silly mapToRegistry registry https://registry.npmjs.org/
+807 silly mapToRegistry uri https://registry.npmjs.org/concat-map
+808 verbose addNameVersion registry:https://registry.npmjs.org/concat-map not in flight; fetching
+809 verbose get https://registry.npmjs.org/concat-map not expired, no request
+810 silly cache afterAdd concat-map@0.0.1
+811 verbose afterAdd /home/luka/.npm/concat-map/0.0.1/package/package.json not in flight; writing
+812 verbose afterAdd /home/luka/.npm/concat-map/0.0.1/package/package.json written
+813 silly loadAllDepsIntoIdealTree Finishing
+814 silly idealTree:prePrune ALI-Schema
+814 silly idealTree:prePrune ├── balanced-match@0.4.1
+814 silly idealTree:prePrune ├── brace-expansion@1.1.4
+814 silly idealTree:prePrune ├── concat-map@0.0.1
+814 silly idealTree:prePrune ├── debug@2.2.0
+814 silly idealTree:prePrune ├── deep-diff@0.3.4
+814 silly idealTree:prePrune ├── electron-settings@1.0.4
+814 silly idealTree:prePrune ├── ensure-array@0.0.5
+814 silly idealTree:prePrune ├── fs-extra@0.26.7
+814 silly idealTree:prePrune ├── glob@7.0.3
+814 silly idealTree:prePrune ├── graceful-fs@4.1.4
+814 silly idealTree:prePrune ├── inflight@1.0.5
+814 silly idealTree:prePrune ├── inherits@2.0.1
+814 silly idealTree:prePrune ├── jsonfile@2.3.1
+814 silly idealTree:prePrune ├── key-mirror@1.0.1
+814 silly idealTree:prePrune ├── klaw@1.3.0
+814 silly idealTree:prePrune ├── lodash@3.10.1
+814 silly idealTree:prePrune ├── minimatch@3.0.0
+814 silly idealTree:prePrune ├── ms@0.7.1
+814 silly idealTree:prePrune ├── once@1.3.3
+814 silly idealTree:prePrune ├── path-is-absolute@1.0.0
+814 silly idealTree:prePrune ├── rimraf@2.5.2
+814 silly idealTree:prePrune └── wrappy@1.0.2
+815 silly loadIdealTree Finishing
+816 silly currentTree ALI-Schema
+817 silly idealTree ALI-Schema
+817 silly idealTree ├── balanced-match@0.4.1
+817 silly idealTree ├── brace-expansion@1.1.4
+817 silly idealTree ├── concat-map@0.0.1
+817 silly idealTree ├── debug@2.2.0
+817 silly idealTree ├── deep-diff@0.3.4
+817 silly idealTree ├── electron-settings@1.0.4
+817 silly idealTree ├── ensure-array@0.0.5
+817 silly idealTree ├── fs-extra@0.26.7
+817 silly idealTree ├── glob@7.0.3
+817 silly idealTree ├── graceful-fs@4.1.4
+817 silly idealTree ├── inflight@1.0.5
+817 silly idealTree ├── inherits@2.0.1
+817 silly idealTree ├── jsonfile@2.3.1
+817 silly idealTree ├── key-mirror@1.0.1
+817 silly idealTree ├── klaw@1.3.0
+817 silly idealTree ├── lodash@3.10.1
+817 silly idealTree ├── minimatch@3.0.0
+817 silly idealTree ├── ms@0.7.1
+817 silly idealTree ├── once@1.3.3
+817 silly idealTree ├── path-is-absolute@1.0.0
+817 silly idealTree ├── rimraf@2.5.2
+817 silly idealTree └── wrappy@1.0.2
+818 silly generateActionsToTake Starting
+819 silly install generateActionsToTake
+820 silly generateActionsToTake Finishing
+821 silly diffTrees action count 22
+822 silly diffTrees add balanced-match@0.4.1
+823 silly diffTrees add concat-map@0.0.1
+824 silly diffTrees add brace-expansion@1.1.4
+825 silly diffTrees add deep-diff@0.3.4
+826 silly diffTrees add ensure-array@0.0.5
+827 silly diffTrees add graceful-fs@4.1.4
+828 silly diffTrees add inherits@2.0.1
+829 silly diffTrees add jsonfile@2.3.1
+830 silly diffTrees add key-mirror@1.0.1
+831 silly diffTrees add klaw@1.3.0
+832 silly diffTrees add lodash@3.10.1
+833 silly diffTrees add minimatch@3.0.0
+834 silly diffTrees add ms@0.7.1
+835 silly diffTrees add debug@2.2.0
+836 silly diffTrees add path-is-absolute@1.0.0
+837 silly diffTrees add wrappy@1.0.2
+838 silly diffTrees add once@1.3.3
+839 silly diffTrees add inflight@1.0.5
+840 silly diffTrees add glob@7.0.3
+841 silly diffTrees add rimraf@2.5.2
+842 silly diffTrees add fs-extra@0.26.7
+843 silly diffTrees add electron-settings@1.0.4
+844 silly decomposeActions action count 176
+845 silly decomposeActions fetch balanced-match@0.4.1
+846 silly decomposeActions extract balanced-match@0.4.1
+847 silly decomposeActions test balanced-match@0.4.1
+848 silly decomposeActions preinstall balanced-match@0.4.1
+849 silly decomposeActions build balanced-match@0.4.1
+850 silly decomposeActions install balanced-match@0.4.1
+851 silly decomposeActions postinstall balanced-match@0.4.1
+852 silly decomposeActions finalize balanced-match@0.4.1
+853 silly decomposeActions fetch concat-map@0.0.1
+854 silly decomposeActions extract concat-map@0.0.1
+855 silly decomposeActions test concat-map@0.0.1
+856 silly decomposeActions preinstall concat-map@0.0.1
+857 silly decomposeActions build concat-map@0.0.1
+858 silly decomposeActions install concat-map@0.0.1
+859 silly decomposeActions postinstall concat-map@0.0.1
+860 silly decomposeActions finalize concat-map@0.0.1
+861 silly decomposeActions fetch brace-expansion@1.1.4
+862 silly decomposeActions extract brace-expansion@1.1.4
+863 silly decomposeActions test brace-expansion@1.1.4
+864 silly decomposeActions preinstall brace-expansion@1.1.4
+865 silly decomposeActions build brace-expansion@1.1.4
+866 silly decomposeActions install brace-expansion@1.1.4
+867 silly decomposeActions postinstall brace-expansion@1.1.4
+868 silly decomposeActions finalize brace-expansion@1.1.4
+869 silly decomposeActions fetch deep-diff@0.3.4
+870 silly decomposeActions extract deep-diff@0.3.4
+871 silly decomposeActions test deep-diff@0.3.4
+872 silly decomposeActions preinstall deep-diff@0.3.4
+873 silly decomposeActions build deep-diff@0.3.4
+874 silly decomposeActions install deep-diff@0.3.4
+875 silly decomposeActions postinstall deep-diff@0.3.4
+876 silly decomposeActions finalize deep-diff@0.3.4
+877 silly decomposeActions fetch ensure-array@0.0.5
+878 silly decomposeActions extract ensure-array@0.0.5
+879 silly decomposeActions test ensure-array@0.0.5
+880 silly decomposeActions preinstall ensure-array@0.0.5
+881 silly decomposeActions build ensure-array@0.0.5
+882 silly decomposeActions install ensure-array@0.0.5
+883 silly decomposeActions postinstall ensure-array@0.0.5
+884 silly decomposeActions finalize ensure-array@0.0.5
+885 silly decomposeActions fetch graceful-fs@4.1.4
+886 silly decomposeActions extract graceful-fs@4.1.4
+887 silly decomposeActions test graceful-fs@4.1.4
+888 silly decomposeActions preinstall graceful-fs@4.1.4
+889 silly decomposeActions build graceful-fs@4.1.4
+890 silly decomposeActions install graceful-fs@4.1.4
+891 silly decomposeActions postinstall graceful-fs@4.1.4
+892 silly decomposeActions finalize graceful-fs@4.1.4
+893 silly decomposeActions fetch inherits@2.0.1
+894 silly decomposeActions extract inherits@2.0.1
+895 silly decomposeActions test inherits@2.0.1
+896 silly decomposeActions preinstall inherits@2.0.1
+897 silly decomposeActions build inherits@2.0.1
+898 silly decomposeActions install inherits@2.0.1
+899 silly decomposeActions postinstall inherits@2.0.1
+900 silly decomposeActions finalize inherits@2.0.1
+901 silly decomposeActions fetch jsonfile@2.3.1
+902 silly decomposeActions extract jsonfile@2.3.1
+903 silly decomposeActions test jsonfile@2.3.1
+904 silly decomposeActions preinstall jsonfile@2.3.1
+905 silly decomposeActions build jsonfile@2.3.1
+906 silly decomposeActions install jsonfile@2.3.1
+907 silly decomposeActions postinstall jsonfile@2.3.1
+908 silly decomposeActions finalize jsonfile@2.3.1
+909 silly decomposeActions fetch key-mirror@1.0.1
+910 silly decomposeActions extract key-mirror@1.0.1
+911 silly decomposeActions test key-mirror@1.0.1
+912 silly decomposeActions preinstall key-mirror@1.0.1
+913 silly decomposeActions build key-mirror@1.0.1
+914 silly decomposeActions install key-mirror@1.0.1
+915 silly decomposeActions postinstall key-mirror@1.0.1
+916 silly decomposeActions finalize key-mirror@1.0.1
+917 silly decomposeActions fetch klaw@1.3.0
+918 silly decomposeActions extract klaw@1.3.0
+919 silly decomposeActions test klaw@1.3.0
+920 silly decomposeActions preinstall klaw@1.3.0
+921 silly decomposeActions build klaw@1.3.0
+922 silly decomposeActions install klaw@1.3.0
+923 silly decomposeActions postinstall klaw@1.3.0
+924 silly decomposeActions finalize klaw@1.3.0
+925 silly decomposeActions fetch lodash@3.10.1
+926 silly decomposeActions extract lodash@3.10.1
+927 silly decomposeActions test lodash@3.10.1
+928 silly decomposeActions preinstall lodash@3.10.1
+929 silly decomposeActions build lodash@3.10.1
+930 silly decomposeActions install lodash@3.10.1
+931 silly decomposeActions postinstall lodash@3.10.1
+932 silly decomposeActions finalize lodash@3.10.1
+933 silly decomposeActions fetch minimatch@3.0.0
+934 silly decomposeActions extract minimatch@3.0.0
+935 silly decomposeActions test minimatch@3.0.0
+936 silly decomposeActions preinstall minimatch@3.0.0
+937 silly decomposeActions build minimatch@3.0.0
+938 silly decomposeActions install minimatch@3.0.0
+939 silly decomposeActions postinstall minimatch@3.0.0
+940 silly decomposeActions finalize minimatch@3.0.0
+941 silly decomposeActions fetch ms@0.7.1
+942 silly decomposeActions extract ms@0.7.1
+943 silly decomposeActions test ms@0.7.1
+944 silly decomposeActions preinstall ms@0.7.1
+945 silly decomposeActions build ms@0.7.1
+946 silly decomposeActions install ms@0.7.1
+947 silly decomposeActions postinstall ms@0.7.1
+948 silly decomposeActions finalize ms@0.7.1
+949 silly decomposeActions fetch debug@2.2.0
+950 silly decomposeActions extract debug@2.2.0
+951 silly decomposeActions test debug@2.2.0
+952 silly decomposeActions preinstall debug@2.2.0
+953 silly decomposeActions build debug@2.2.0
+954 silly decomposeActions install debug@2.2.0
+955 silly decomposeActions postinstall debug@2.2.0
+956 silly decomposeActions finalize debug@2.2.0
+957 silly decomposeActions fetch path-is-absolute@1.0.0
+958 silly decomposeActions extract path-is-absolute@1.0.0
+959 silly decomposeActions test path-is-absolute@1.0.0
+960 silly decomposeActions preinstall path-is-absolute@1.0.0
+961 silly decomposeActions build path-is-absolute@1.0.0
+962 silly decomposeActions install path-is-absolute@1.0.0
+963 silly decomposeActions postinstall path-is-absolute@1.0.0
+964 silly decomposeActions finalize path-is-absolute@1.0.0
+965 silly decomposeActions fetch wrappy@1.0.2
+966 silly decomposeActions extract wrappy@1.0.2
+967 silly decomposeActions test wrappy@1.0.2
+968 silly decomposeActions preinstall wrappy@1.0.2
+969 silly decomposeActions build wrappy@1.0.2
+970 silly decomposeActions install wrappy@1.0.2
+971 silly decomposeActions postinstall wrappy@1.0.2
+972 silly decomposeActions finalize wrappy@1.0.2
+973 silly decomposeActions fetch once@1.3.3
+974 silly decomposeActions extract once@1.3.3
+975 silly decomposeActions test once@1.3.3
+976 silly decomposeActions preinstall once@1.3.3
+977 silly decomposeActions build once@1.3.3
+978 silly decomposeActions install once@1.3.3
+979 silly decomposeActions postinstall once@1.3.3
+980 silly decomposeActions finalize once@1.3.3
+981 silly decomposeActions fetch inflight@1.0.5
+982 silly decomposeActions extract inflight@1.0.5
+983 silly decomposeActions test inflight@1.0.5
+984 silly decomposeActions preinstall inflight@1.0.5
+985 silly decomposeActions build inflight@1.0.5
+986 silly decomposeActions install inflight@1.0.5
+987 silly decomposeActions postinstall inflight@1.0.5
+988 silly decomposeActions finalize inflight@1.0.5
+989 silly decomposeActions fetch glob@7.0.3
+990 silly decomposeActions extract glob@7.0.3
+991 silly decomposeActions test glob@7.0.3
+992 silly decomposeActions preinstall glob@7.0.3
+993 silly decomposeActions build glob@7.0.3
+994 silly decomposeActions install glob@7.0.3
+995 silly decomposeActions postinstall glob@7.0.3
+996 silly decomposeActions finalize glob@7.0.3
+997 silly decomposeActions fetch rimraf@2.5.2
+998 silly decomposeActions extract rimraf@2.5.2
+999 silly decomposeActions test rimraf@2.5.2
+1000 silly decomposeActions preinstall rimraf@2.5.2
+1001 silly decomposeActions build rimraf@2.5.2
+1002 silly decomposeActions install rimraf@2.5.2
+1003 silly decomposeActions postinstall rimraf@2.5.2
+1004 silly decomposeActions finalize rimraf@2.5.2
+1005 silly decomposeActions fetch fs-extra@0.26.7
+1006 silly decomposeActions extract fs-extra@0.26.7
+1007 silly decomposeActions test fs-extra@0.26.7
+1008 silly decomposeActions preinstall fs-extra@0.26.7
+1009 silly decomposeActions build fs-extra@0.26.7
+1010 silly decomposeActions install fs-extra@0.26.7
+1011 silly decomposeActions postinstall fs-extra@0.26.7
+1012 silly decomposeActions finalize fs-extra@0.26.7
+1013 silly decomposeActions fetch electron-settings@1.0.4
+1014 silly decomposeActions extract electron-settings@1.0.4
+1015 silly decomposeActions test electron-settings@1.0.4
+1016 silly decomposeActions preinstall electron-settings@1.0.4
+1017 silly decomposeActions build electron-settings@1.0.4
+1018 silly decomposeActions install electron-settings@1.0.4
+1019 silly decomposeActions postinstall electron-settings@1.0.4
+1020 silly decomposeActions finalize electron-settings@1.0.4
+1021 silly executeActions Starting
+1022 silly install executeActions
+1023 silly doSerial global-install 0
+1024 silly doParallel fetch 22
+1025 verbose lock using /home/luka/.npm/_locks/staging-604e27147e16fd3b.lock for /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging
+1026 silly doParallel extract 22
+1027 silly extract balanced-match@0.4.1
+1028 silly extract concat-map@0.0.1
+1029 silly extract brace-expansion@1.1.4
+1030 silly extract deep-diff@0.3.4
+1031 silly extract ensure-array@0.0.5
+1032 silly extract graceful-fs@4.1.4
+1033 silly extract inherits@2.0.1
+1034 silly extract jsonfile@2.3.1
+1035 silly extract key-mirror@1.0.1
+1036 silly extract klaw@1.3.0
+1037 silly extract lodash@3.10.1
+1038 silly extract minimatch@3.0.0
+1039 silly extract ms@0.7.1
+1040 silly extract debug@2.2.0
+1041 silly extract path-is-absolute@1.0.0
+1042 silly extract wrappy@1.0.2
+1043 silly extract once@1.3.3
+1044 silly extract inflight@1.0.5
+1045 silly extract glob@7.0.3
+1046 silly extract rimraf@2.5.2
+1047 silly extract fs-extra@0.26.7
+1048 silly extract electron-settings@1.0.4
+1049 verbose unbuild node_modules/.staging/balanced-match-8c685793
+1050 verbose unbuild node_modules/.staging/concat-map-9a7e9759
+1051 verbose unbuild node_modules/.staging/brace-expansion-4c387036
+1052 verbose unbuild node_modules/.staging/deep-diff-eba2c698
+1053 verbose unbuild node_modules/.staging/ensure-array-4126cf33
+1054 verbose unbuild node_modules/.staging/graceful-fs-1eb384ce
+1055 verbose unbuild node_modules/.staging/inherits-7d0df391
+1056 verbose unbuild node_modules/.staging/jsonfile-688d7d6b
+1057 verbose unbuild node_modules/.staging/key-mirror-76f5c751
+1058 verbose unbuild node_modules/.staging/klaw-c1c80e2d
+1059 verbose unbuild node_modules/.staging/lodash-4f197858
+1060 verbose unbuild node_modules/.staging/minimatch-8d622a08
+1061 verbose unbuild node_modules/.staging/ms-9641c5bc
+1062 verbose unbuild node_modules/.staging/debug-a6af0c49
+1063 verbose unbuild node_modules/.staging/path-is-absolute-5ff3e0c1
+1064 verbose unbuild node_modules/.staging/wrappy-897ee144
+1065 verbose unbuild node_modules/.staging/once-21cde4fc
+1066 verbose unbuild node_modules/.staging/inflight-d8ba4bb1
+1067 verbose unbuild node_modules/.staging/glob-1d34bd7e
+1068 verbose unbuild node_modules/.staging/fs-extra-c9384b70
+1069 verbose unbuild node_modules/.staging/electron-settings-fa7f5e81
+1070 verbose unbuild node_modules/.staging/rimraf-e39ec771
+1071 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1072 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793
+1073 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1074 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759
+1075 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/brace-expansion-4c387036 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1076 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/brace-expansion-4c387036
+1077 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/deep-diff-eba2c698 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1078 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/deep-diff-eba2c698
+1079 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inherits-7d0df391 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1080 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inherits-7d0df391
+1081 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/jsonfile-688d7d6b is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1082 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/jsonfile-688d7d6b
+1083 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1084 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33
+1085 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/debug-a6af0c49 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1086 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/debug-a6af0c49
+1087 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/graceful-fs-1eb384ce is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1088 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/graceful-fs-1eb384ce
+1089 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/klaw-c1c80e2d is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1090 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/klaw-c1c80e2d
+1091 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/minimatch-8d622a08 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1092 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/minimatch-8d622a08
+1093 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inflight-d8ba4bb1 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1094 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inflight-d8ba4bb1
+1095 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ms-9641c5bc is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1096 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ms-9641c5bc
+1097 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/fs-extra-c9384b70 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1098 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/fs-extra-c9384b70
+1099 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1100 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1
+1101 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/key-mirror-76f5c751 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1102 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/key-mirror-76f5c751
+1103 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/lodash-4f197858 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1104 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/lodash-4f197858
+1105 verbose tar unpack /home/luka/.npm/brace-expansion/1.1.4/package.tgz
+1106 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/brace-expansion-4c387036
+1107 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/brace-expansion-4c387036 is being purged
+1108 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/brace-expansion-4c387036
+1109 verbose tar unpack /home/luka/.npm/deep-diff/0.3.4/package.tgz
+1110 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/deep-diff-eba2c698
+1111 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/deep-diff-eba2c698 is being purged
+1112 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/deep-diff-eba2c698
+1113 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1114 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e
+1115 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1116 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc
+1117 verbose tar unpack /home/luka/.npm/balanced-match/0.4.1/package.tgz
+1118 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793
+1119 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793 is being purged
+1120 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793
+1121 verbose tar unpack /home/luka/.npm/concat-map/0.0.1/package.tgz
+1122 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759
+1123 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759 is being purged
+1124 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759
+1125 verbose tar unpack /home/luka/.npm/jsonfile/2.3.1/package.tgz
+1126 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/jsonfile-688d7d6b
+1127 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/jsonfile-688d7d6b is being purged
+1128 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/jsonfile-688d7d6b
+1129 verbose tar unpack /home/luka/.npm/ensure-array/0.0.5/package.tgz
+1130 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33
+1131 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33 is being purged
+1132 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33
+1133 verbose tar unpack /home/luka/.npm/debug/2.2.0/package.tgz
+1134 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/debug-a6af0c49
+1135 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/debug-a6af0c49 is being purged
+1136 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/debug-a6af0c49
+1137 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/wrappy-897ee144 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1138 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/wrappy-897ee144
+1139 verbose tar unpack /home/luka/.npm/klaw/1.3.0/package.tgz
+1140 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/klaw-c1c80e2d
+1141 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/klaw-c1c80e2d is being purged
+1142 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/klaw-c1c80e2d
+1143 verbose tar unpack /home/luka/.npm/minimatch/3.0.0/package.tgz
+1144 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/minimatch-8d622a08
+1145 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/minimatch-8d622a08 is being purged
+1146 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/minimatch-8d622a08
+1147 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/electron-settings-fa7f5e81 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1148 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/electron-settings-fa7f5e81
+1149 verbose tar unpack /home/luka/.npm/ms/0.7.1/package.tgz
+1150 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ms-9641c5bc
+1151 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ms-9641c5bc is being purged
+1152 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ms-9641c5bc
+1153 verbose tar unpack /home/luka/.npm/inherits/2.0.1/package.tgz
+1154 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inherits-7d0df391
+1155 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inherits-7d0df391 is being purged
+1156 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inherits-7d0df391
+1157 verbose tar unpack /home/luka/.npm/graceful-fs/4.1.4/package.tgz
+1158 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/graceful-fs-1eb384ce
+1159 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/graceful-fs-1eb384ce is being purged
+1160 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/graceful-fs-1eb384ce
+1161 verbose tar unpack /home/luka/.npm/path-is-absolute/1.0.0/package.tgz
+1162 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1
+1163 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1 is being purged
+1164 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1
+1165 verbose tar unpack /home/luka/.npm/key-mirror/1.0.1/package.tgz
+1166 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/key-mirror-76f5c751
+1167 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/key-mirror-76f5c751 is being purged
+1168 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/key-mirror-76f5c751
+1169 verbose tar unpack /home/luka/.npm/lodash/3.10.1/package.tgz
+1170 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/lodash-4f197858
+1171 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/lodash-4f197858 is being purged
+1172 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/lodash-4f197858
+1173 verbose tar unpack /home/luka/.npm/inflight/1.0.5/package.tgz
+1174 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inflight-d8ba4bb1
+1175 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inflight-d8ba4bb1 is being purged
+1176 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/inflight-d8ba4bb1
+1177 silly gunzTarPerm modes [ '775', '664' ]
+1178 verbose tar unpack /home/luka/.npm/glob/7.0.3/package.tgz
+1179 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e
+1180 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e is being purged
+1181 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e
+1182 verbose tar unpack /home/luka/.npm/once/1.3.3/package.tgz
+1183 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc
+1184 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc is being purged
+1185 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc
+1186 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771 is being purged from base /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1187 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771
+1188 silly gunzTarPerm modes [ '775', '664' ]
+1189 silly gunzTarPerm modes [ '775', '664' ]
+1190 silly gunzTarPerm modes [ '775', '664' ]
+1191 verbose tar unpack /home/luka/.npm/fs-extra/0.26.7/package.tgz
+1192 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/fs-extra-c9384b70
+1193 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/fs-extra-c9384b70 is being purged
+1194 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/fs-extra-c9384b70
+1195 verbose tar unpack /home/luka/.npm/wrappy/1.0.2/package.tgz
+1196 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/wrappy-897ee144
+1197 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/wrappy-897ee144 is being purged
+1198 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/wrappy-897ee144
+1199 silly gunzTarPerm modes [ '775', '664' ]
+1200 silly gunzTarPerm modes [ '775', '664' ]
+1201 silly gunzTarPerm modes [ '775', '664' ]
+1202 silly gunzTarPerm modes [ '775', '664' ]
+1203 silly gunzTarPerm modes [ '775', '664' ]
+1204 silly gunzTarPerm modes [ '775', '664' ]
+1205 silly gunzTarPerm modes [ '775', '664' ]
+1206 silly gunzTarPerm modes [ '775', '664' ]
+1207 silly gunzTarPerm modes [ '775', '664' ]
+1208 silly gunzTarPerm modes [ '775', '664' ]
+1209 verbose tar unpack /home/luka/.npm/electron-settings/1.0.4/package.tgz
+1210 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/electron-settings-fa7f5e81
+1211 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/electron-settings-fa7f5e81 is being purged
+1212 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/electron-settings-fa7f5e81
+1213 silly gunzTarPerm modes [ '775', '664' ]
+1214 verbose tar unpack /home/luka/.npm/rimraf/2.5.2/package.tgz
+1215 verbose tar unpacking to /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771
+1216 silly gentlyRm /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771 is being purged
+1217 verbose gentlyRm don't care about contents; nuking /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771
+1218 silly gunzTarPerm modes [ '775', '664' ]
+1219 silly gunzTarPerm modes [ '775', '664' ]
+1220 silly gunzTarPerm modes [ '775', '664' ]
+1221 silly gunzTarPerm modes [ '775', '664' ]
+1222 silly gunzTarPerm modes [ '775', '664' ]
+1223 silly gunzTarPerm modes [ '775', '664' ]
+1224 silly gunzTarPerm modes [ '775', '664' ]
+1225 silly gunzTarPerm extractEntry package.json
+1226 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1227 silly gunzTarPerm extractEntry .npmignore
+1228 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1229 silly gunzTarPerm extractEntry package.json
+1230 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1231 silly gunzTarPerm extractEntry package.json
+1232 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1233 silly gunzTarPerm extractEntry package.json
+1234 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1235 silly gunzTarPerm extractEntry package.json
+1236 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1237 silly gunzTarPerm extractEntry package.json
+1238 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1239 silly gunzTarPerm extractEntry package.json
+1240 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1241 silly gunzTarPerm extractEntry package.json
+1242 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1243 silly gunzTarPerm extractEntry package.json
+1244 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1245 silly gunzTarPerm extractEntry package.json
+1246 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1247 silly gunzTarPerm extractEntry package.json
+1248 silly gunzTarPerm extractEntry package.json
+1249 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1250 silly gunzTarPerm extractEntry package.json
+1251 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1252 silly gunzTarPerm extractEntry package.json
+1253 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1254 silly gunzTarPerm extractEntry package.json
+1255 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1256 silly gunzTarPerm extractEntry package.json
+1257 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1258 silly gunzTarPerm extractEntry package.json
+1259 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1260 silly gunzTarPerm extractEntry package.json
+1261 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1262 silly gunzTarPerm extractEntry package.json
+1263 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1264 silly gunzTarPerm extractEntry package.json
+1265 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1266 silly gunzTarPerm extractEntry ensure-array.js
+1267 silly gunzTarPerm modified mode [ 'ensure-array.js', 420, 436 ]
+1268 silly gunzTarPerm extractEntry Jakefile.js
+1269 silly gunzTarPerm modified mode [ 'Jakefile.js', 420, 436 ]
+1270 silly gunzTarPerm extractEntry package.json
+1271 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1272 silly gunzTarPerm extractEntry .npmignore
+1273 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1274 silly gunzTarPerm extractEntry README.md
+1275 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1276 silly gunzTarPerm extractEntry .npmignore
+1277 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1278 silly gunzTarPerm extractEntry README.md
+1279 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1280 silly gunzTarPerm extractEntry README.md
+1281 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1282 silly gunzTarPerm extractEntry LICENSE
+1283 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1284 silly gunzTarPerm extractEntry .npmignore
+1285 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1286 silly gunzTarPerm extractEntry README.md
+1287 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1288 silly gunzTarPerm extractEntry LICENSE
+1289 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1290 silly gunzTarPerm extractEntry index.js
+1291 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1292 silly gunzTarPerm extractEntry .npmignore
+1293 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1294 silly gunzTarPerm extractEntry README.md
+1295 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1296 silly gunzTarPerm extractEntry README.md
+1297 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1298 silly gunzTarPerm extractEntry LICENSE
+1299 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1300 silly gunzTarPerm extractEntry LICENSE
+1301 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1302 silly gunzTarPerm extractEntry index.js
+1303 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1304 silly gunzTarPerm extractEntry README.md
+1305 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1306 silly gunzTarPerm extractEntry LICENSE
+1307 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1308 silly gunzTarPerm extractEntry .npmignore
+1309 silly gunzTarPerm extractEntry README.md
+1310 silly gunzTarPerm extractEntry .npmignore
+1311 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1312 silly gunzTarPerm extractEntry README.md
+1313 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1314 silly gunzTarPerm extractEntry .npmignore
+1315 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1316 silly gunzTarPerm extractEntry node.js
+1317 silly gunzTarPerm modified mode [ 'node.js', 420, 436 ]
+1318 silly gunzTarPerm extractEntry README.md
+1319 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1320 silly gunzTarPerm extractEntry LICENSE
+1321 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1322 silly gunzTarPerm extractEntry README.md
+1323 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1324 silly gunzTarPerm extractEntry LICENSE
+1325 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1326 silly gunzTarPerm extractEntry README.md
+1327 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1328 silly gunzTarPerm extractEntry LICENSE
+1329 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1330 silly gunzTarPerm extractEntry .npmignore
+1331 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1332 silly gunzTarPerm extractEntry README.md
+1333 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1334 silly gunzTarPerm extractEntry index.js
+1335 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1336 silly gunzTarPerm extractEntry license
+1337 silly gunzTarPerm modified mode [ 'license', 420, 436 ]
+1338 silly gunzTarPerm extractEntry README.md
+1339 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1340 silly gunzTarPerm extractEntry LICENSE
+1341 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1342 error tar.unpack untar error /home/luka/.npm/ensure-array/0.0.5/package.tgz
+1343 silly gunzTarPerm extractEntry .npmignore
+1344 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1345 silly gunzTarPerm extractEntry README.md
+1346 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1347 silly gunzTarPerm extractEntry README.md
+1348 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1349 silly gunzTarPerm extractEntry LICENSE
+1350 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1351 silly gunzTarPerm extractEntry common.js
+1352 silly gunzTarPerm modified mode [ 'common.js', 420, 436 ]
+1353 silly gunzTarPerm extractEntry glob.js
+1354 silly gunzTarPerm modified mode [ 'glob.js', 420, 436 ]
+1355 silly gunzTarPerm extractEntry sync.js
+1356 silly gunzTarPerm modified mode [ 'sync.js', 420, 436 ]
+1357 silly gunzTarPerm extractEntry changelog.md
+1358 silly gunzTarPerm modified mode [ 'changelog.md', 420, 436 ]
+1359 error tar.unpack untar error /home/luka/.npm/ms/0.7.1/package.tgz
+1360 silly gunzTarPerm extractEntry README.md
+1361 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1362 silly gunzTarPerm extractEntry LICENSE
+1363 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1364 error tar.unpack untar error /home/luka/.npm/jsonfile/2.3.1/package.tgz
+1365 error tar.unpack untar error /home/luka/.npm/graceful-fs/4.1.4/package.tgz
+1366 error tar.unpack untar error /home/luka/.npm/klaw/1.3.0/package.tgz
+1367 error tar.unpack untar error /home/luka/.npm/brace-expansion/1.1.4/package.tgz
+1368 error tar.unpack untar error /home/luka/.npm/inherits/2.0.1/package.tgz
+1369 error tar.unpack untar error /home/luka/.npm/concat-map/0.0.1/package.tgz
+1370 warn install:concat-map@0.0.1 ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759/package.json'
+1371 verbose install:concat-map@0.0.1 Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/concat-map-9a7e9759/package.json'
+1371 verbose install:concat-map@0.0.1     at Error (native)
+1372 error tar.unpack untar error /home/luka/.npm/minimatch/3.0.0/package.tgz
+1373 error tar.unpack untar error /home/luka/.npm/key-mirror/1.0.1/package.tgz
+1374 error tar.unpack untar error /home/luka/.npm/deep-diff/0.3.4/package.tgz
+1375 error tar.unpack untar error /home/luka/.npm/balanced-match/0.4.1/package.tgz
+1376 warn install:balanced-match@0.4.1 ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793/package.json'
+1377 verbose install:balanced-match@0.4.1 Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/balanced-match-8c685793/package.json'
+1377 verbose install:balanced-match@0.4.1     at Error (native)
+1378 error tar.unpack untar error /home/luka/.npm/debug/2.2.0/package.tgz
+1379 error tar.unpack untar error /home/luka/.npm/inflight/1.0.5/package.tgz
+1380 error tar.unpack untar error /home/luka/.npm/wrappy/1.0.2/package.tgz
+1381 error tar.unpack untar error /home/luka/.npm/fs-extra/0.26.7/package.tgz
+1382 error tar.unpack untar error /home/luka/.npm/once/1.3.3/package.tgz
+1383 warn install:once@1.3.3 ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc/package.json'
+1384 verbose install:once@1.3.3 Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/once-21cde4fc/package.json'
+1384 verbose install:once@1.3.3     at Error (native)
+1385 error tar.unpack untar error /home/luka/.npm/path-is-absolute/1.0.0/package.tgz
+1386 warn install:path-is-absolute@1.0.0 ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1/package.json'
+1387 verbose install:path-is-absolute@1.0.0 Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/path-is-absolute-5ff3e0c1/package.json'
+1387 verbose install:path-is-absolute@1.0.0     at Error (native)
+1388 error tar.unpack untar error /home/luka/.npm/lodash/3.10.1/package.tgz
+1389 error tar.unpack untar error /home/luka/.npm/electron-settings/1.0.4/package.tgz
+1390 error tar.unpack untar error /home/luka/.npm/glob/7.0.3/package.tgz
+1391 warn install:glob@7.0.3 ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e/package.json'
+1392 verbose install:glob@7.0.3 Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/glob-1d34bd7e/package.json'
+1392 verbose install:glob@7.0.3     at Error (native)
+1393 error tar.unpack untar error /home/luka/.npm/rimraf/2.5.2/package.tgz
+1394 warn install:rimraf@2.5.2 ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771/package.json'
+1395 verbose install:rimraf@2.5.2 Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/rimraf-e39ec771/package.json'
+1395 verbose install:rimraf@2.5.2     at Error (native)
+1396 verbose unlock done using /home/luka/.npm/_locks/staging-604e27147e16fd3b.lock for /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging
+1397 silly rollbackFailedOptional Starting
+1398 silly rollbackFailedOptional Finishing
+1399 silly runTopLevelLifecycles Starting
+1400 silly runTopLevelLifecycles Finishing
+1401 silly install printInstalled
+1402 warn Invalid version: "2.0"
+1403 warn ALI-Schema No description
+1404 warn ALI-Schema No repository field.
+1405 warn ALI-Schema No README data
+1406 warn ALI-Schema No license field.
+1407 verbose fstream_path /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33/.npmignore
+1408 verbose fstream_type File
+1409 verbose fstream_class FileWriter
+1410 verbose fstream_finish_call utimes
+1411 verbose stack Error: ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33/.npmignore'
+1411 verbose stack     at Error (native)
+1412 verbose fstream_stack /usr/share/npm/node_modules/fstream/lib/writer.js:306:21
+1412 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+1413 verbose cwd /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema
+1414 error Linux 4.4.0-24-generic
+1415 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "electron-settings"
+1416 error node v4.2.6
+1417 error npm  v3.5.2
+1418 error path /run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33/.npmignore
+1419 error code ENOTSUP
+1420 error errno -95
+1421 error syscall utime
+1422 error nospc ENOTSUP: operation not supported on socket, utime '/run/user/1000/gvfs/afp-volume:host=LServer.local,user=luka,volume=Files/Electron/ALI-Schema/node_modules/.staging/ensure-array-4126cf33/.npmignore'
+1423 error nospc This is most likely not a problem with npm itself
+1423 error nospc and is related to insufficient space on your system.
+1424 verbose exit [ -95, true ]
