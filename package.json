@@ -4,6 +4,10 @@
   "main": "main.js",
   "devDependencies": {
     "electron-builder": "^5.7.0",
-    "electron-packager": "^7.1.0"
+    "electron-packager": "^7.1.0",
+    "electron-prebuilt": "^1.2.3"
+  },
+  "scripts": {
+    "start": "electron ."
   }
 }
