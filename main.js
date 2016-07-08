@@ -26,10 +26,11 @@ function createWindow() {
         win = new BrowserWindow({
             width: 500,
             height: 600,
-            frame: false,
+            frame: true,
             transparent: false,
             resizable: true,
-            center: false
+            center: false,
+            autoHideMenuBar: true
         });
     }
 
